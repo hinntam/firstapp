@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 // components/Projects.js
 const projects = [
@@ -31,7 +31,7 @@ const Projects = () => (
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
           >
             
-            <Image
+            <img
               src={project.image}
               alt={project.title}
               className="rounded-lg mb-4 w-full h-48 object-cover"
