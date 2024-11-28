@@ -9,19 +9,14 @@ import Skills from './components/Skill';
 export default function Home() {
   return (
     <>
-      {/* Page Head for metadata */}
-      <Head>
-        <title>My Portfolio</title>
-        <meta name="description" content="Portfolio of a software developer showcasing projects and skills." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      
 
       {/* Header */}
       <Header />
 
       {/* Main Content */}
-      <main className="mt-16"> {/* Offset for fixed header */}
+      <main className="mt-16  bg-neutral-950 text-cyan-50"> {/* Offset for fixed header */}
+      
         {/* Hero Section */}
         <Hero />
         <Skills/>
