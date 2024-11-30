@@ -47,7 +47,9 @@ const Hero = () => (
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8 sm:mt-8">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YNtWJNPCPPs?si=7jnlvhCPzVODrWQf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h8eyY7dIiN4?si=LEdJrv-PcXVmCa1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
         </div>
         
       </div>
