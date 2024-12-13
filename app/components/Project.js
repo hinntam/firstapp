@@ -1,31 +1,32 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 // components/Projects.js
 const projects = [
   {
-    title: 'Portfolio Website',
-    description: 'A personal portfolio website to showcase my skills and projects.',
-    technologies: ['Next.js', 'Tailwind CSS', 'JavaScript'],
-    image: '/assets/project.jpeg', // Replace with your project screenshot
-    demoLink: 'https://myportfolio.com',
-    codeLink: 'https://github.com/myportfolio',
+    title: 'Movies search App',
+    description: 'The WhatToWatch allows to search movies through the keywords. The results displayed 5 movies random',
+    technologies: ['Next.js', 'Tailwind CSS', 'JavaScript','API movies'],
+    image: '/assets/movies.png', // Replace with your project screenshot
+    demoLink: 'https://what-to-watch-blue.vercel.app/',
+    codeLink: 'https://github.com/myportfoliohttps://github.com/ding-dong-qiang/what-to-watch',
   },
   {
-    title: 'Task Manager App',
-    description: 'A task management app for organizing daily tasks efficiently.',
-    technologies: ['React', 'Node.js', 'MongoDB'],
-    image: '/assets/project.jpeg',
-    demoLink: 'https://taskmanager.com',
-    codeLink: 'https://github.com/taskmanager',
+    title: 'Alberta Driving Test',
+    description: 'An application help to learn driving test in Alberta.',
+    technologies: ['React Native', 'Node.js', 'MongoDB', 'Express'],
+    image: '/assets/albertadrivingtest.png',
+    demoLink: 'https://play.google.com/store/apps/details?id=com.codewithnguyen.todoalbertadriving',
+    codeLink: 'https://github.com/hinntam/AlbertaClass7',
   },
   {
-    title: 'Task Manager App',
-    description: 'A task management app for organizing daily tasks efficiently.',
-    technologies: ['React', 'Node.js', 'MongoDB'],
-    image: '/assets/project.jpeg',
-    demoLink: 'https://taskmanager.com',
-    codeLink: 'https://github.com/taskmanager',
+    title: 'Parking Master App',
+    description: 'It designed to help users find parking spots with ease. The application is developed using JavaScript, React Native, and Expo, with CSS for styling. The project leverages a mix of languages including Kotlin, Ruby, Objective-C++, JavaScript, and Objective-C..',
+    technologies: ['React', 'Nextjs', 'GoogleMap API', 'Tailwind CSS'],
+    image: '/assets/parkingmaster.jpg',
+    demoLink: 'https://github.com/manminder11/CPRG-303-Project',
+    codeLink: 'https://github.com/manminder11/CPRG-303-Project',
   },
 ];
 
@@ -40,7 +41,7 @@ const Projects = () => (
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
           >
             
-            <img src={project.image} alt="Example" width={500} height={500} />
+            <img src={project.image} alt="Example" height={50} />
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-600 mb-4">{project.description}</p>
             <div className="mb-4">
@@ -65,6 +66,7 @@ const Projects = () => (
               >
                 Demo
               </a>
+              
               <a
                 href={project.codeLink}
                 target="_blank"
