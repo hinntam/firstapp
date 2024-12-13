@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       
-
+     
       {/* Header */}
       <Header />
 
@@ -18,7 +18,7 @@ export default function Home() {
       <main className="mt-16  bg-neutral-950 text-cyan-50"> {/* Offset for fixed header */}
       
         {/* Hero Section */}
-        <Hero />
+        <Hero/>
         <Skills/>
         <Projects/>
         {/* Contact Section */}
