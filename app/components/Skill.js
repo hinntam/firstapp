@@ -7,6 +7,7 @@ const skills = [
     { name: 'Next.js', icon: '/icons/nextjs.svg', level: '80%' },
     { name: 'Tailwind CSS', icon: '/icons/tailwind.svg', level: '85%' },
     { name: 'Node.js', icon: '/icons/nodejs.svg', level: '75%' },
+    { name: 'API', icon: '/icons/nodejs.svg', level: '95%' },
   ];
   
   const Skills = () => (
@@ -24,7 +25,7 @@ const skills = [
               
                 
               
-                <h3 className="text-lg font-semibold">{skill.name}</h3>
+                <h3 className="text-lg font-semibold text-black">{skill.name}</h3>
               </div>
               <div>
                 <div className="bg-gray-200 rounded-full h-3">

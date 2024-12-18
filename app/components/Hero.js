@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VideoPlayer from "./Video";
 
 const Hero = () => (
     <section className="container mx-auto px-8">
@@ -44,8 +45,7 @@ const Hero = () => (
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8 sm:mt-8">
-        <iframe className="w-full h-96"
-             src="https://www.youtube.com/embed/h8eyY7dIiN4?si=YtQwg4obJ_Rwm0lj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <VideoPlayer/>
         </div>
         </div>
       </div>
