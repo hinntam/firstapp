@@ -16,7 +16,7 @@ GET https://hinntam.vercel.app/restapi/part-1/api/dogs/2
 
 ###
 
-PUT https://hinntam.vercel.app/restapi/part-1/api/dogs/3 HTTP/1.1
+PUT https://hinntam.vercel.app/restapi/part-1/api/dogs/4 HTTP/1.1
 Content-Type: :application/json
 
 {
