@@ -12,7 +12,7 @@ Content-Type: application/json
 
 ###
 
-GET https://hinntam.vercel.app/restapi/part-2/api/dogs/7
+GET https://hinntam.vercel.app/restapi/part-2/api/dogs/4
 
 ###
 

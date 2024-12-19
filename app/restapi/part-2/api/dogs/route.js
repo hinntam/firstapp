@@ -34,6 +34,7 @@ export async function POST(request) {
     //ad newdog to the database
     newDog.id = 4;
     // INSERT INTO dogs(id,name,age) values(....)
+    
     return new Response(JSON.stringify(newDog),{status:201});
 
 }
