@@ -19,7 +19,7 @@ export default function DogPage(){
             age: dogAge
         }
         console.log(JSON.stringify(newObjDog));
-        const request = new Request("http://localhost:3000/week-13/api/dogs",{
+        const request = new Request("https://hinntam.vercel.app/restapi/part-1/api/dogs",{
             method:"POST",
             body: JSON.stringify(newObjDog)
         });
@@ -33,7 +33,7 @@ export default function DogPage(){
     }
     async function getAllDogs(){
         try {
-            const response = await fetch("http://localhost:3000/week-13/api/dogs");
+            const response = await fetch("https://hinntam.vercel.app/restapi/part-1/api/dogs");
             if(!response.ok) console.log(response.error);
             const data = await response.json();
             setDogList(data);
@@ -43,7 +43,7 @@ export default function DogPage(){
         }
     }
     async function deleteDog(idNum) {
-        const request = new Request(`http://localhost:3000/week-13/api/dogs/${idNum}`,{
+        const request = new Request(`https://hinntam.vercel.app/restapi/part-1/api/dogs/${idNum}`,{
             method:"DELETE"
         });
         getAllDogs();
@@ -68,18 +68,18 @@ export default function DogPage(){
                     ))
                 }
             </section>
-            <form className="p-3 bg-slate-300" onSubmit={handleSubmit}>
-                <h2>Add New Dog</h2>
-                <div>
-                    <label>Name:</label>
+            <form className="max-w-md p-5 rounded-lg bg-green-300 text-black" onSubmit={handleSubmit}>
+                <h2 className="text-2xl text-center mb-2">Add New Dog</h2>
+                <div className="mb-2">
+                    <label className="inline-block w-40">Name:</label>
                     <input type="text" onChange={handleChangeName} value={dogName}/>
                 </div>
-                <div>
-                    <label>Age:</label>
+                <div className="mb-2">
+                    <label className="inline-block w-40">Age:</label>
                     <input type="text" onChange={handleChangeAge} value={dogAge}/>
                 </div>
-                <div>
-                    <button type="submit">Add dog</button>
+                <div className="mb-2">
+                    <button type="submit" className="p-5 rounded bg-slate-900 text-cyan-50 mt-5">Add dog</button>
                 </div>
             </form>
         </main>
