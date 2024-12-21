@@ -1,21 +1,21 @@
 [
     {
       "id": "1",
-      "name": "Personal Project",
-      "description":"Introduction basic programming",
+      "name": "Learning NextJS",
+      "description":"Web development",
       "rate": 5,
       "content": 
       [
         {
             "id":1,
-            "name":"Project 1",
+            "name":"Guide and reference",
             "detail":[
                 {
                     "id":1,
                     "link":"https://www.youtube.com/watch?v=Ofux_4c94FI",
-                    "desc":"Project 1.1",
-                    "content":"Shopping list ",
-                    "link2":"week-1"
+                    "desc":"Course information:",
+                    "content":"Week 1: Introduction to Web Application Development. Week 2: Introduction to React"
+                    
                     
                 },
                 {

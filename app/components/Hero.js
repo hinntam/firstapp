@@ -45,7 +45,7 @@ const Hero = () => (
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8 sm:mt-8">
-          <VideoPlayer/>
+          <VideoPlayer link="./assets/introduce.mp4"/>
         </div>
         </div>
       </div>

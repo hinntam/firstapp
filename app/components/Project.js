@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import VideoPlayer from "./Video";
 
 
 // components/Projects.js
@@ -11,14 +12,16 @@ const projects = [
     image: '/assets/movies.png', // Replace with your project screenshot
     demoLink: 'https://what-to-watch-blue.vercel.app/',
     codeLink: 'https://github.com/myportfoliohttps://github.com/ding-dong-qiang/what-to-watch',
+    video:'/assets/whattowatch.mp4'
   },
   {
-    title: 'Alberta Driving Test',
-    description: 'An application help to learn driving test in Alberta.',
+    title: 'Sprout App',
+    description: 'An application help to take care plant.',
     technologies: ['React Native', 'Node.js', 'MongoDB', 'Express'],
     image: '/assets/albertadrivingtest.png',
     demoLink: 'https://play.google.com/store/apps/details?id=com.codewithnguyen.todoalbertadriving',
     codeLink: 'https://github.com/hinntam/AlbertaClass7',
+    video:'/assets/sprout.mp4'
   },
   {
     title: 'Parking Master App',
@@ -27,6 +30,7 @@ const projects = [
     image: '/assets/parkingmaster.jpg',
     demoLink: 'https://github.com/manminder11/CPRG-303-Project',
     codeLink: 'https://github.com/manminder11/CPRG-303-Project',
+    video:'/assets/parkingmaster.mp4'
   },
 ];
 
@@ -41,7 +45,7 @@ const Projects = () => (
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
           >
             
-            <img src={project.image} alt="Example" height={50} />
+            <VideoPlayer link={project.video}/>
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-600 mb-4">{project.description}</p>
             <div className="mb-4">

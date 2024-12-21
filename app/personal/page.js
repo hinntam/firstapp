@@ -65,8 +65,9 @@ export default function Home() {
       {/* Center - Video Player */}
       <div className="m-5">
         <VideoPlayer url={url}
-        title={title}
+        
         />
+        {title}
         <div className="flex justify-between items-center w-full max-w-2xl mt-4">
           <button className=" hover:underline bg-gray-500 border p-1 text-cyan-50">Overview</button>
           <button className="hover:underline bg-gray-500 border p-1 text-cyan-50">Q&A</button>
