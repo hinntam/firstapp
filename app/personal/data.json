@@ -13,36 +13,232 @@
                 {
                     "id":1,
                     "link":"https://www.youtube.com/watch?v=Ofux_4c94FI",
-                    "desc":"Course information:",
-                    "content":"Week 1: Introduction to Web Application Development. Week 2: Introduction to React"
+                    "desc":"Course information",
+                    "content":"<b>Course Overview:</b><br/>This course is a continuation of Web Development 1 and provides an in-depth exploration of full-stack web application development. Building on the foundations established in the previous course, we will delve into intermediate JavaScript, explore the functionalities of React.js - a front-end JavaScript library, and learn to leverage the power of Next.js - a robust full-stack framework.<br/>How to Succeed in this Course:<br/>1.Embrace Collaboration: All work done in this course is public, encouraging open collaboration. Don't hesitate to ask for help or offer assistance to your peers.<br/>2.Learn from Others: Since all code repositories are public, you have the unique opportunity to learn from your peers' work. Explore different approaches to the same problems, review code, and adopt practices that resonate with you.<br/>3.Stay Engaged: Attend all classes and engage with the course materials. Attendance is not required, but it is highly recommended. Timely completion of assignments and a continuous engagement with the course material is key to understanding and success.<br/>Remember, this course is not just about the final grade, it's about growing as a developer, learning to collaborate effectively, and continually improving your skills."
                     
                     
                 },
                 {
                     "id":2,
                     "link":"https://www.youtube.com/watch?v=6NegFl9p_sE",
-                    "desc":"Week 1.2",
-                    "content":"Content of week 1"
+                    "desc":"Guide: Setting Up Your Development Environment",
+                    "content":"<b>Guide: Development Environment Setup</b><br/>Download, Install, and Configure the Required Software<br><b>git</b><br>Navigate to: https://git-scm.com/.<br/>Click on Downloads -> Windows -> Click here to download.<br/>Run the installer executable using the defaults for all installation steps.<br/>GitHub Account<br/>Navigate to https://github.com/.<br/>Create an account if you do not have one. Choose a username that will work well for your professional portfolio. Avoid using a username that contains the word SAIT. My GitHub username is warsylewicz and you can view my public repositories here: https://github.com/warsylewicz/.<br/>If you ever change your GitHub username, you must let your instructor know. This will ensure that your assignments are graded correctly.<br/><b>GitHub Desktop</b><br/>Navigate to https://github.com/apps/desktop<br/>Click Download now and then click Download for Windows (64 bit) and then run the installer executable.<br/>During installation, click Sign into GitHub Desktop and it will use the same account as the previous step.<br/>Close GitHub Desktop app for now.<br/><b>GitHub Student Developer Pack</b><br/>Navigate to https://education.github.com/pack.<br/>Click Sign up for Student Developer Pack and follow the instructions. This will give you a free GitHub Pro account and access to a number of free software tools, e.g. GitHub Copilot."
+                },
+                {
+                    "id":3,
+                    "link":"https://www.youtube.com/watch?v=6NegFl9p_sE",
+                    "desc":"Guide: Cloning a Next.js Project Repository",
+                    "content":"<b>Guide: Cloning a Next.js Project Repository</b>."
+                },
+                {
+                    "id":4,
+                    "link":"https://www.youtube.com/watch?v=6NegFl9p_sE",
+                    "desc":"Guide: Creating a New Next.js Project",
+                    "content":"<b>Guide: How to Create a New Next.js Project</b>."
+                },
+                {
+                    "id":5,
+                    "link":"https://www.youtube.com/watch?v=6NegFl9p_sE",
+                    "desc":"Guide: Coding Workflow",
+                    "content":"<b>Guide: Coding Workflow</b>."
+                },
+                {
+                    "id":6,
+                    "link":"https://www.youtube.com/watch?v=6NegFl9p_sE",
+                    "desc":"Guide: Deploying a Next.js App",
+                    "content":"<b>Guide: Deploying a Next.js App using Vercel</b>."
+                },
+                {
+                    "id":7,
+                    "link":"https://www.youtube.com/watch?v=6NegFl9p_sE",
+                    "desc":"Reference documentation",
+                    "content":"<b>Reference documentation</b>."
                 }
             ]
         },
         {
             "id":2,
-            "name":"Week 2",
+            "name":"Week 1: Introduction to Web Application",
             "detail":[
                 {
                     "id":1,
-                    "name":"abc",
                     "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
-                    "desc":"Week 2.1",
-                    "content":"Content of week 2"
+                    "desc":"Intro to Web App Dev",
+                    "content":"Introduction to Web Application Development"
                 },
                 {
                     "id":2,
-                    "name":"xyz",
                     "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
-                    "desc":"Week 2.2",
-                    "content":"Content of week 2"
+                    "desc":"HTML/CSS/JS Refresher",
+                    "content":"Refresher on HTML, CSS, and JavaScript"
+                },
+                {
+                    "id":3,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 1 Assignment",
+                    "content":"This assignment is designed to ensure that you have the correct working development environment for the course and have access to the code demos."
+                }
+            ]
+        },
+        {
+            "id":3,
+            "name":"Week 2: Introduction to React",
+            "detail":[
+                {
+                    "id":1,
+                    "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
+                    "desc":"Introduction to React",
+                    "content":"Introduction to React"
+                },
+                {
+                    "id":2,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 2 Assignment",
+                    "content":"Week 2 Assignment"
+                }
+            ]
+        },
+        {
+            "id":4,
+            "name":"Week 3: Components and Props",
+            "detail":[
+                {
+                    "id":1,
+                    "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
+                    "desc":"Components and Props",
+                    "content":"Components and Props"
+                },
+                {
+                    "id":2,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 3 Assignment",
+                    "content":"Week 3 Assignment"
+                }
+            ]
+        },
+        {
+            "id":5,
+            "name":"Week 4: Basic Interactivity",
+            "detail":[
+                {
+                    "id":1,
+                    "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
+                    "desc":"Basic Interactivity",
+                    "content":"Basic Interactivity"
+                },
+                {
+                    "id":2,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 4 Assignment",
+                    "content":"Week 4 Assignment"
+                }
+            ]
+        },
+        {
+            "id":6,
+            "name":"Week 5: Interactivity with Forms",
+            "detail":[
+                {
+                    "id":1,
+                    "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
+                    "desc":"Interactivity with Forms",
+                    "content":"Interactivity with Forms"
+                },
+                {
+                    "id":2,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 5 Assignment",
+                    "content":"Week 5 Assignment"
+                }
+            ]
+        },
+        {
+            "id":7,
+            "name":"Week 6: Handling Lists",
+            "detail":[
+                {
+                    "id":1,
+                    "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
+                    "desc":"Handling Lists",
+                    "content":"Handling Lists"
+                },
+                {
+                    "id":2,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 6 Assignment",
+                    "content":"Week 6 Assignment"
+                }
+            ]
+        },
+        {
+            "id":8,
+            "name":"Week 7: Managing State",
+            "detail":[
+                {
+                    "id":1,
+                    "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
+                    "desc":"Managing State",
+                    "content":"Managing State"
+                },
+                {
+                    "id":2,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 7 Assignment",
+                    "content":"Week 7 Assignment"
+                }
+            ]
+        },
+        {
+            "id":9,
+            "name":"Week 8: Fetching Data",
+            "detail":[
+                {
+                    "id":1,
+                    "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
+                    "desc":"Fetching Data",
+                    "content":"Fetching Data"
+                },
+                {
+                    "id":2,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 8 Assignment",
+                    "content":"Week 8 Assignment"
+                }
+            ]
+        },
+        {
+            "id":10,
+            "name":"Week 9: Firebase Auth",
+            "detail":[
+                {
+                    "id":1,
+                    "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
+                    "desc":"Firebase Authentication",
+                    "content":"Firebase Authentication"
+                },
+                {
+                    "id":2,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 9 Assignment",
+                    "content":"Week 9 Assignment"
+                }
+            ]
+        },
+        {
+            "id":11,
+            "name":"Week 10: Cloud Firestore",
+            "detail":[
+                {
+                    "id":1,
+                    "link":"https://www.youtube.com/watch?v=v_hR4K4auoQ&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ",
+                    "desc":"Cloud Firestore",
+                    "content":"Cloud Firestore"
+                },
+                {
+                    "id":2,
+                    "link":"https://www.youtube.com/watch?v=haMOUb3KVSo&list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ&index=5",
+                    "desc":"Week 10 Assignment",
+                    "content":"Week 10 Assignment"
                 }
             ]
         }

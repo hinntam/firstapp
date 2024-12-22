@@ -19,21 +19,23 @@ export default function Home() {
     setLstGroup(rs);
  },[items])
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="container mx-auto px-4">
+      <main className="flex flex-col md:flex-row">
       {/* Left Sidebar - Contents */}
-      <div className="w-1/4 bg-white p-4 overflow-y-auto border-r">
+
+      <div className="md:w-1/4 p-4">
         {
           
           <div className="bg-black">
           {
             items.map((item) =>(
               <div key={item.id} className="nx-flex nx-flex-col nx-gap-1 nextra-menu-desktop max-md:nx-hidden">
-                <h2 className="nx-flex nx-flex-col nx-gap-1 active text-cyan-50 text-center">{item.name}</h2>
+                <h2 className="nx-flex nx-flex-col nx-gap-1 active text-cyan-50 text-center font-bold">{item.name}</h2>
                 <ul>
                 {
                     item.content.map((i)=>(
-                      <li key={i.id}>
-                        <h2 className="text-xl font-bold text-blue-50 ml-2">{i.name}</h2>
+                      <li key={i.id} >
+                        <h2 className="text-sm font-bold text-blue-50 ml-2">{i.name}</h2>
                         {
                           <ul>
                             {
@@ -63,21 +65,24 @@ export default function Home() {
       </div>
 
       {/* Center - Video Player */}
-      <div className="m-5">
+      <div className="md:w-1/2 p-4">
         <VideoPlayer url={url}
         
         />
-        {title}
+        {/**Content */}
+        <div dangerouslySetInnerHTML={{ __html: title }} />
+        {/**Right handside */}
         <div className="flex justify-between items-center w-full max-w-2xl mt-4">
           <button className=" hover:underline bg-gray-500 border p-1 text-cyan-50">Overview</button>
           <button className="hover:underline bg-gray-500 border p-1 text-cyan-50">Q&A</button>
           <button className=" hover:underline bg-gray-500 border p-1 text-cyan-50">Notebook</button>
           <button className=" hover:underline bg-gray-500 border p-1 text-cyan-50">Transcript</button>
         </div>
+        
       </div>
 
       {/* Right Sidebar - Q&A */}
-      <div className="w-1/4 bg-white p-4 overflow-y-auto border-l">
+      <div className="md:w-1/4 p-4">
         <h2 className="text-lg font-bold mb-4">Q&A</h2>
         <div className="mb-4">
           <h3 className="font-semibold">Key takeaways for this video</h3>
@@ -88,6 +93,7 @@ export default function Home() {
           <p className="text-gray-700">Questions and explanations to clarify the content.</p>
         </div>
       </div>
+      </main>
     </div>
   );
 }
