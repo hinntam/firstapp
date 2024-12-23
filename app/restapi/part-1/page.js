@@ -6,6 +6,7 @@ export default function DogPage(){
     const [dogList,setDogList] = useState([]);
     const [dogName,setDogName] = useState("");
     const [dogAge,setDogAge] = useState(0); 
+    const [file,setFile] = useState()
     const handleChangeName = (event)=>{
         setDogName(event.target.value);
     }
@@ -14,6 +15,10 @@ export default function DogPage(){
     }
     async function handleSubmit(event){
         event.preventDefault();
+        let formData = new FormData();
+        formData.append("name",dogName);
+        formData.append("age",dogAge);
+        formData.append("file",file);
         let newObjDog = {
             name: dogName,
             age: dogAge
@@ -21,7 +26,7 @@ export default function DogPage(){
         console.log(JSON.stringify(newObjDog));
         const request = new Request("https://hinntam.vercel.app/restapi/part-1/api/dogs",{
             method:"POST",
-            body: JSON.stringify(newObjDog)
+            body: formData
         });
         try {
             const response = await fetch(request); 
@@ -77,6 +82,10 @@ export default function DogPage(){
                 <div className="mb-2">
                     <label className="inline-block w-40">Age:</label>
                     <input type="text" onChange={handleChangeAge} value={dogAge}/>
+                </div>
+                <div className="mb-2">
+                    <label className="inline-block w-40">File:</label>
+                    <input type="file" name="file" onChange={(e)=>setFile(e.target.files[0])}/>
                 </div>
                 <div className="mb-2">
                     <button type="submit" className="p-5 rounded bg-slate-900 text-cyan-50 mt-5">Add dog</button>
