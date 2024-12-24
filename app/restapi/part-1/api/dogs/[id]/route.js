@@ -8,7 +8,7 @@ export async function GET(request, {params} ) {
     const idNum= Number(id);
     //retrieve the lists of dogs from the database
     //select * from  dogs
-    const response = await sql`select * from dogs`;
+    const response = await sql`select * from dog`;
 
 
 
@@ -26,7 +26,7 @@ export async function PUT(request, {params}) {
     //TODO: validation and error handling on dog object
     // update dog number idnum in the database
     const response = await sql`
-    UPDATE dogs SET name=${dog.name}, age=${dog.age} WHERE id=${idNum}
+    UPDATE dog SET name=${dog.name}, age=${dog.age} WHERE id=${idNum}
     RETURNING *`;
     //204 not data 200 have data
     return new Response(JSON.stringify(response),{status:200});
@@ -39,11 +39,11 @@ export async function PATCH(request, {params}) {
     try {
         if(dog.name){
             //update the dog name in the database for dog number [idNum]
-            await sql`UPDATE dogs SET name = ${dog.name} WHERE id = ${idNum};`;
+            await sql`UPDATE dog SET name = ${dog.name} WHERE id = ${idNum};`;
         }
         if(dog.age){
             //update the dog age in the database for dog number
-            await sql`UPDATE dogs SET age = ${dog.age} WHERE id = ${idNum};`;
+            await sql`UPDATE dog SET age = ${dog.age} WHERE id = ${idNum};`;
         }
     } catch (error) {
         return new Response("Database Error",{status:503});
@@ -57,7 +57,7 @@ export async function DELETE(request, {params}) {
     const idNum= Number(id);
     //check for authenticated user
     //DELETE DOG NUMBER [IDNUM] FROM DATABASE
-    await sql`DELETE FROM dogs WHERE id = ${idNum}`;
+    await sql`DELETE FROM dog WHERE id = ${idNum}`;
     return new Response(null,{status:204});
 
 }

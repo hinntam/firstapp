@@ -7,14 +7,14 @@ export default function PageDogAPI() {
     const [imageSrc, setImageSrc] = useState('');
     const fetchData = async () => {
         try {
-          const response = await fetch('https://hinntam.vercel.app/restapi/part-1/api/dogs');
+          const response = await fetch('https://hinntam.vercel.app/restapi/part-1/api/dogs/1');
           const result = await response.json();
             // Assuming the image data is in result.img and is a buffer
              // Randomly select between 0 and 1
-             const randomIndex = Math.floor(Math.random() * 2);
+             //const randomIndex = Math.floor(Math.random() * 2);
 
-            if (result[randomIndex].img) {
-              const base64String = Buffer.from(result[randomIndex].img).toString('base64');
+            if (result.img) {
+              const base64String = Buffer.from(result.img).toString('base64');
               setImageSrc(`data:image/jpeg;base64,${base64String}`);
           }
           setData(result);
@@ -55,8 +55,16 @@ export default function PageDogAPI() {
                 {data && (
                     <div>
                         <p className="mb-4">End-point API dogs</p>
-                        <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs</p>
+                        <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs
+                          <input type="text" value="1" className="border-2 border-gray-500" />
+                        </p>
+                        <p className="mb-4">Dog ID: {data.id}</p>
+                        <p className="mb-4">Dog Name: {data.name}</p>
+                        <p className="mb-4">Dog Age: {data.age}</p>
                         {imageSrc && <img src={imageSrc} alt="Dog" />}
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+                            Edit
+                        </button>
                     </div>
                 )}
     </div>
