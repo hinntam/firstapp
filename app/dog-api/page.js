@@ -6,7 +6,6 @@ export default function PageDogAPI() {
     const [data, setData] = useState(null);
     const [imageSrc, setImageSrc] = useState('');
     const [id, setId] = useState(1);
-    const [text, setText] = useState('');
 
     const fetchData = async () => {
         try {
@@ -36,7 +35,7 @@ export default function PageDogAPI() {
     }, [id]);
 
     const handleInputChange = (event) => {
-        setText(event.target.value);
+        setId(event.target.value);
     };
 
     return (
@@ -64,20 +63,20 @@ export default function PageDogAPI() {
                 <div className="container mx-auto px-4 py-8">
                     <h1 className="text-3xl font-bold mb-4 mt-5">Dog Breeds</h1>
                     <p className="mb-4">End-point API dogs</p>
-                    <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs/</p>
+                    <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs/
                     <input
                         type="text"
                         value={id}
                         onChange={handleInputChange}
                         placeholder="Enter text dog ID"
-                        className="mb-4 p-2 border border-gray-300 w-full md:w-auto"
+                        className="border border-gray-300 w-full"
                     />
-                   
+                   </p>
                     {data && (
                         <div>
-                            {data.name && <h2 className="text-sm">Name:{data.name}</h2>}
-                            {data.age && <h2 className="text-sm">Age:{data.age}</h2>}
-                            {data.description && <h2 className="text-sm">Description:{data.description}</h2>}
+                            {data.name && <h2 className="text-sm">- Name:{data.name}</h2>}
+                            {data.age && <h2 className="text-sm">- Age:{data.age}</h2>}
+                            {data.description && <h2 className="text-sm">- Description:{data.description}</h2>}
                             {imageSrc && <img src={imageSrc} alt="Dog" className="w-full md:w-auto" />}
                         </div>
                     )}
