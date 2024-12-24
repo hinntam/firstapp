@@ -5,9 +5,13 @@ import { useEffect, useState } from "react";
 export default function PageDogAPI() {
     const [data, setData] = useState(null);
     const [imageSrc, setImageSrc] = useState('');
+    const [id,setId] = useState(1);
+    const handleInputChange = (event) => {
+      setId(event.target.value);
+    };
     const fetchData = async () => {
         try {
-          const response = await fetch('https://hinntam.vercel.app/restapi/part-1/api/dogs/1');
+          const response = await fetch(`https://hinntam.vercel.app/restapi/part-1/api/dogs/${id}`);
           const result = await response.json();
             // Assuming the image data is in result.img and is a buffer
              // Randomly select between 0 and 1
@@ -56,15 +60,22 @@ export default function PageDogAPI() {
                     <div>
                         <p className="mb-4">End-point API dogs</p>
                         <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs
-                          <input type="text" value="1" className="border-2 border-gray-500" />
+                        <input
+                            type="text"
+                            value={text}
+                            onChange={handleInputChange}
+                            placeholder="Enter text"
+                            className="mb-4 p-2 border border-gray-300"
+                        />
+                         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={()=>fetchData()}>
+                            Edit
+                        </button>
                         </p>
                         <p className="mb-4">Dog ID: {data.id}</p>
                         <p className="mb-4">Dog Name: {data.name}</p>
                         <p className="mb-4">Dog Age: {data.age}</p>
                         {imageSrc && <img src={imageSrc} alt="Dog" />}
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
-                            Edit
-                        </button>
+                       
                     </div>
                 )}
     </div>
