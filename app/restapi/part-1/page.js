@@ -75,7 +75,7 @@ export default function DogPage(){
                             <p>Name:{dog.name}</p>
                             <p>Age:{dog.age}</p>
                             <p>Desc:{dog.desc}</p>
-                            <p>Image:<img src={`data:image/jpeg;base64,${dog.image}`} alt="dog" className="w-20 h-20"/></p>
+                            <p>Image:<img src={`data:image/jpeg;base64,${dog.img}`} alt="dog" className="w-20 h-20"/></p>
                         </div>
                     ))
                 }
