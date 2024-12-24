@@ -10,8 +10,11 @@ export default function PageDogAPI() {
           const response = await fetch('https://hinntam.vercel.app/restapi/part-1/api/dogs');
           const result = await response.json();
             // Assuming the image data is in result.img and is a buffer
-            if (result[0].img) {
-              const base64String = Buffer.from(result[0].img).toString('base64');
+             // Randomly select between 0 and 1
+             const randomIndex = Math.floor(Math.random() * 2);
+
+            if (result[randomIndex].img) {
+              const base64String = Buffer.from(result[randomIndex].img).toString('base64');
               setImageSrc(`data:image/jpeg;base64,${base64String}`);
           }
           setData(result);
