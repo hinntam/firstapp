@@ -37,6 +37,7 @@ export async function POST(request) {
     let dogName = newDog.get("name").toString().trim();
     dogName = dogName.replace(/\s+/g, ''); // Remove all spaces
     const dogAge = newDog.get("age");
+    const dogDesc = newDog.get("desc");
     const dogFile = newDog.get("file");
     if (!dogFile) {
         return new Response(JSON.stringify({ error: "No file uploaded" }), { status: 400 });
@@ -55,7 +56,7 @@ export async function POST(request) {
     //ad newdog to the database
     const dbURL = process.env.DATABASE_URL || "";
     const sql = neon(dbURL);
-    const response = await sql`INSERT INTO dog(name,description,age,img,cat_dog) VALUES(${dogName},'',${dogAge},${buffer},3) 
+    const response = await sql`INSERT INTO dog(name,description,age,img,cat_dog) VALUES(${dogName},${dogDesc},${dogAge},${buffer},3) 
     RETURNING *;`;
     //newDog.id = 4;
     // INSERT INTO dogs(id,name,age) values(....)

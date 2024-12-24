@@ -6,6 +6,7 @@ export default function DogPage(){
     const [dogList,setDogList] = useState([]);
     const [dogName,setDogName] = useState("");
     const [dogAge,setDogAge] = useState(0); 
+    const [dogDesc,setDogDesc] = useState("");
     const [file,setFile] = useState()
     const handleChangeName = (event)=>{
         setDogName(event.target.value);
@@ -13,11 +14,15 @@ export default function DogPage(){
     const handleChangeAge = (event)=>{
         setDogAge(event.target.value);
     }
+    const handleChangeDesc = (event)=>{
+        setDogAge(event.target.value);
+    }
     async function handleSubmit(event){
         event.preventDefault();
         let formData = new FormData();
         formData.append("name",dogName);
         formData.append("age",dogAge);
+        formData.append("desc",dogDesc);
         formData.append("file",file);
         let newObjDog = {
             name: dogName,
@@ -66,9 +71,11 @@ export default function DogPage(){
             <section>
                 {
                     dogList.map((dog) =>(
-                        <div key={dog.id} className="border-b-2">
+                        <div key={dog.id} className="border-b-2 border-gray-300 p-2">
                             <p>Name:{dog.name}</p>
                             <p>Age:{dog.age}</p>
+                            <p>Desc:{dog.desc}</p>
+                            <p>Image:<img src={`data:image/jpeg;base64,${dog.image}`} alt="dog" className="w-20 h-20"/></p>
                         </div>
                     ))
                 }
@@ -82,6 +89,10 @@ export default function DogPage(){
                 <div className="mb-2">
                     <label className="inline-block w-40">Age:</label>
                     <input type="text" onChange={handleChangeAge} value={dogAge}/>
+                </div>
+                <div className="mb-2">
+                    <label className="inline-block w-40">Desc:</label>
+                    <input type="text" onChange={handleChangeDesc} value={dogDesc}/>
                 </div>
                 <div className="mb-2">
                     <label className="inline-block w-40">File:</label>
