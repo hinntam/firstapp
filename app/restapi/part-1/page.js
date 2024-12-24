@@ -71,11 +71,11 @@ export default function DogPage(){
             <section>
                 {
                     dogList.map((dog) =>(
-                        <div key={dog.id} className="border-b-2 border-gray-300 p-2">
-                            <p>Name:{dog.name}</p>
-                            <p>Age:{dog.age}</p>
-                            <p>Desc:{dog.desc}</p>
-                            <p>Image:<img src={`data:image/jpeg;base64,${Buffer.from(dog.img).toString('base64')}`} alt="dog" className="w-20 h-20"/></p>
+                        <div key={dog.id} className="border-b-2 border-gray-300 p-2 flex items-center">
+                            <p className="mr-4">Name:{dog.name}</p>
+                            <p className="mr-4">Age:{dog.age}</p>
+                            <p className="mr-4">Desc:{dog.description}</p>
+                            <p className="mr-4">Image:<img src={`data:image/jpeg;base64,${Buffer.from(dog.img).toString('base64')}`} alt="dog" className="w-20 h-20"/></p>
                         </div>
                     ))
                 }
