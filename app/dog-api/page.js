@@ -30,7 +30,7 @@ export default function PageDogAPI() {
       };
     useEffect(() => {
         fetchData();
-    },[data]);
+    },[id]);
     return (
     <div className="flex">
       <nav className="w-64 h-screen bg-gray-800 text-white fixed">
