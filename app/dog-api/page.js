@@ -62,7 +62,7 @@ export default function PageDogAPI() {
                         <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs
                         <input
                             type="text"
-                            value={text}
+                            value={id}
                             onChange={handleInputChange}
                             placeholder="Enter text"
                             className="mb-4 p-2 border border-gray-300"
