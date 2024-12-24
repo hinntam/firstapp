@@ -59,11 +59,11 @@ export default function PageDogAPI() {
                     </ul>
                 </div>
             </nav>
-            <main className="ml-0 md:ml-64 p-4 w-full">
+            <main className="ml-0 md:ml-10 p-4 w-full">
                 <h1 className="text-4xl font-bold mb-8 text-center">Dog API</h1>
                 <div className="container mx-auto px-4 py-8">
                     <h1 className="text-3xl font-bold mb-4 mt-5">Dog Breeds</h1>
-                    <p className="mb-4">Enter the dog breed ID to get information</p>
+                    <p className="mb-4">End-point API dogs</p>
                     <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs/</p>
                     <input
                         type="text"
@@ -75,7 +75,6 @@ export default function PageDogAPI() {
                    
                     {data && (
                         <div>
-                            <p className="mb-4">End-point API dogs</p>
                             {data.name && <h2 className="text-sm">Name:{data.name}</h2>}
                             {data.age && <h2 className="text-sm">Age:{data.age}</h2>}
                             {data.description && <h2 className="text-sm">Description:{data.description}</h2>}
