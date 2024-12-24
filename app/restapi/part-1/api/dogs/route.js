@@ -7,7 +7,7 @@ export async function GET() {
     //database functionality goes here
     const dbURL = process.env.DATABASE_URL || "";
     const sql = neon(dbURL);
-    const response = await sql`select * from dogs`;
+    const response = await sql`select * from dog`;
 
     return new Response(JSON.stringify(response),{status:200});
 
@@ -34,7 +34,8 @@ export async function POST(request) {
 
     */
     const newDog= await request.formData();
-    const dogName = newDog.get("name");
+    let dogName = newDog.get("name").toString().trim();
+    dogName = dogName.replace(/\s+/g, ''); // Remove all spaces
     const dogAge = newDog.get("age");
     const dogFile = newDog.get("file");
     if (!dogFile) {
@@ -44,9 +45,9 @@ export async function POST(request) {
      const arrayBuffer = await dogFile.arrayBuffer();
      const buffer = Buffer.from(arrayBuffer);
     // Define the file path
-    const filePath = path.join(process.cwd(), 'public', `${dogName+dogAge}.jpg`);
+    //const filePath = path.join(process.cwd(), 'public', `${dogName+dogAge}.jpg`);
     // Save the buffer as an image file
-    await fs.writeFile(filePath, buffer);
+    //await fs.writeFile(filePath, buffer);
 
     //insert new dog to database
     //database functionality goes here
@@ -54,7 +55,7 @@ export async function POST(request) {
     //ad newdog to the database
     const dbURL = process.env.DATABASE_URL || "";
     const sql = neon(dbURL);
-    const response = await sql`INSERT INTO dogs(name,age,img,cat_num) VALUES(${dogName},${dogAge},${dogName+dogAge+'.jpg'},3) 
+    const response = await sql`INSERT INTO dog(name,description,age,img,cat_dog) VALUES(${dogName},'',${dogAge},${buffer},3) 
     RETURNING *;`;
     //newDog.id = 4;
     // INSERT INTO dogs(id,name,age) values(....)

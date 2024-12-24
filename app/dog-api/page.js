@@ -4,10 +4,16 @@ import { useEffect, useState } from "react";
 
 export default function PageDogAPI() {
     const [data, setData] = useState(null);
+    const [imageSrc, setImageSrc] = useState('');
     const fetchData = async () => {
         try {
           const response = await fetch('https://hinntam.vercel.app/restapi/part-1/api/dogs');
           const result = await response.json();
+            // Assuming the image data is in result.img and is a buffer
+            if (result[0].img) {
+              const base64String = Buffer.from(result[0].img).toString('base64');
+              setImageSrc(`data:image/jpeg;base64,${base64String}`);
+          }
           setData(result);
         } catch (error) {
           console.error('Error fetching data:', error);
@@ -43,14 +49,13 @@ export default function PageDogAPI() {
       <h1 className="text-4xl font-bold mb-8 text-center">Dog API</h1>
       <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-4">Dog Breeds</h1>
-        <p className="mb-4">End-point API dogs</p>
-        <label>https://hinntam.vercel.app/restapi/part-1/api/dogs</label>
-        <img src="https://hinntam.vercel.app/dogs/akita_dog.jpg" alt="Dog Breeds" />
-        <div>
-        {JSON.stringify(data, null, 2)}
-        </div>
-        <button className="p-5 rounded bg-slate-900 text-cyan-50 mt-5">Fetch data</button>
-
+                {data && (
+                    <div>
+                        <p className="mb-4">End-point API dogs</p>
+                        <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs</p>
+                        {imageSrc && <img src={imageSrc} alt="Dog" />}
+                    </div>
+                )}
     </div>
     </main>
   </div>
