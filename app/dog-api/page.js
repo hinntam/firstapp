@@ -62,24 +62,23 @@ export default function PageDogAPI() {
             <main className="ml-0 md:ml-64 p-4 w-full">
                 <h1 className="text-4xl font-bold mb-8 text-center">Dog API</h1>
                 <div className="container mx-auto px-4 py-8">
-                    <h1 className="text-3xl font-bold mb-4">Dog Breeds</h1>
+                    <h1 className="text-3xl font-bold mb-4 mt-5">Dog Breeds</h1>
+                    <p className="mb-4">Enter the dog breed ID to get information</p>
+                    <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs/</p>
                     <input
                         type="text"
                         value={id}
                         onChange={handleInputChange}
-                        placeholder="Enter text"
+                        placeholder="Enter text dog ID"
                         className="mb-4 p-2 border border-gray-300 w-full md:w-auto"
                     />
-                    <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-                        onClick={() => fetchData()}
-                    >
-                        Fetch Dog
-                    </button>
+                   
                     {data && (
                         <div>
                             <p className="mb-4">End-point API dogs</p>
-                            {data.name && <h2 className="text-xl font-semibold">{data.name}</h2>}
+                            {data.name && <h2 className="text-sm">Name:{data.name}</h2>}
+                            {data.age && <h2 className="text-sm">Age:{data.age}</h2>}
+                            {data.description && <h2 className="text-sm">Description:{data.description}</h2>}
                             {imageSrc && <img src={imageSrc} alt="Dog" className="w-full md:w-auto" />}
                         </div>
                     )}
