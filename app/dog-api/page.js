@@ -79,30 +79,21 @@ export default function PageDogAPI() {
 
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <li className="border-b-2 border-gray-300 pb-2">
-                            <h2>JSON</h2>
+                            <h2 className="font-bold">JSON</h2>
                             <pre className="max-w-full md:max-w-1/2 overflow-auto h-64">
                                 {JSON.stringify(data, null, 2)}
                             </pre>
                         </li>
                         <li className="border-b-2 border-gray-300 pb-2">
-                            <h1>RESULT</h1>
+                            <h1 className="font-bold">RESULT</h1>
                             {data && (
                                 <div>
-                                    {data.name && <h2 className="text-sm font-bold">- Name:{data.name}</h2>}
-                                    {data.age && <h2 className="text-sm font-bold">- Age:{data.age}</h2>}
-                                    {data.description && <h2 className="text-sm font-bold">- Description:{data.description}</h2>}
-                                    {imageSrc && <img src={imageSrc} alt="Dog" className="w-1/2" />}
+                                   {imageSrc && <img src={imageSrc} alt="Dog" className="w-1/2" />}
                                 </div>
                             )}
                         </li>
                     </ul>
-                    <input
-                        type="text"
-                        value={id}
-                        onChange={handleInputChange}
-                        placeholder="Enter text dog ID"
-                        className="border border-gray-300 w-full"
-                    />
+                    
                   
                     
                 </div>
