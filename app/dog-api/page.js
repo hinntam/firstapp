@@ -44,14 +44,14 @@ export default function PageDogAPI() {
                 <div className="p-4">
                     <h2 className="text-2xl font-bold mb-4">Navigation</h2>
                     <ul>
-                        <li className="mb-2">
+                        <li className="mb-2 border-b-2 border-blue-400">
                             <Link href="/">
-                                <a className="hover:underline">Home</a>
+                                Home
                             </Link>
                         </li>
-                        <li className="mb-2">
+                        <li className="mb-2 border-b-2 border-blue-400">
                             <Link href="/dog-api">
-                                <a className="hover:underline">Dog API</a>
+                                Dog API
                             </Link>
                         </li>
                         {/* Add more links as needed */}
@@ -61,9 +61,35 @@ export default function PageDogAPI() {
             <main className="ml-0 md:ml-10 p-4 w-full">
                 <h1 className="text-4xl font-bold mb-8 text-center">Dog API</h1>
                 <div className="container mx-auto px-4 py-8">
-                    <h1 className="text-3xl font-bold mb-4 mt-5">Dog Breeds</h1>
-                    <p className="mb-4">End-point API dogs</p>
+                    <h1 className="text-3xl font-bold mb-4 mt-5">End-point API dogs</h1>
+                    <ul className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                        <li className="border-b-2 border-blue-400 pb-2">List all of dogs</li>
+                        <li className="border-b-2 border-blue-400 pb-2">List dogs by keyword</li>
+                        <li className="border-b-2 border-blue-400 pb-2">List category dogs</li>
+                        <li className="border-b-2 border-blue-400 pb-2">Detail of dog by ID</li>
+                        <li className="border-b-2 border-blue-400 pb-2">Random 5 dogs</li>
+                    </ul>
+                    <h1 className="text-3xl font-bold mb-4 mt-5">Display dog by ID</h1>
                     <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs/
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <li className="border-b-2 border-gray-300 pb-2">
+                            <h2>JSON</h2>
+                            <pre>
+                                {JSON.stringify(data, null, 2)}
+                            </pre>
+                        </li>
+                        <li className="border-b-2 border-gray-300 pb-2">
+                            <h1>RESULT</h1>
+                            {data && (
+                                <div>
+                                    {data.name && <h2 className="text-sm font-bold">- Name:{data.name}</h2>}
+                                    {data.age && <h2 className="text-sm font-bold">- Age:{data.age}</h2>}
+                                    {data.description && <h2 className="text-sm font-bold">- Description:{data.description}</h2>}
+                                    {imageSrc && <img src={imageSrc} alt="Dog" className="w-full h-full" />}
+                                </div>
+                            )}
+                        </li>
+                    </ul>
                     <input
                         type="text"
                         value={id}
@@ -72,14 +98,7 @@ export default function PageDogAPI() {
                         className="border border-gray-300 w-full"
                     />
                    </p>
-                    {data && (
-                        <div>
-                            {data.name && <h2 className="text-sm">- Name:{data.name}</h2>}
-                            {data.age && <h2 className="text-sm">- Age:{data.age}</h2>}
-                            {data.description && <h2 className="text-sm">- Description:{data.description}</h2>}
-                            {imageSrc && <img src={imageSrc} alt="Dog" className="w-full md:w-auto" />}
-                        </div>
-                    )}
+                    
                 </div>
             </main>
         </div>
