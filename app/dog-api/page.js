@@ -70,7 +70,13 @@ export default function PageDogAPI() {
                         <li className="border-b-2 border-blue-400 pb-2">Random 5 dogs</li>
                     </ul>
                     <h1 className="text-3xl font-bold mb-4 mt-5">Display dog by ID</h1>
-                    <p className="mb-4">https://hinntam.vercel.app/restapi/part-1/api/dogs/
+                    <p className="mb-4 border-b-2 border-gray-500">
+                        https://hinntam.vercel.app/restapi/part-1/api/dogs/:id
+                    </p>
+                    <p className="mb-4 font-bold">
+                        Display dog detail by ID
+                    </p>
+
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <li className="border-b-2 border-gray-300 pb-2">
                             <h2>JSON</h2>
@@ -97,7 +103,7 @@ export default function PageDogAPI() {
                         placeholder="Enter text dog ID"
                         className="border border-gray-300 w-full"
                     />
-                   </p>
+                  
                     
                 </div>
             </main>
