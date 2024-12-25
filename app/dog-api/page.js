@@ -74,7 +74,7 @@ export default function PageDogAPI() {
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <li className="border-b-2 border-gray-300 pb-2">
                             <h2>JSON</h2>
-                            <pre>
+                            <pre className="w-1/2">
                                 {JSON.stringify(data, null, 2)}
                             </pre>
                         </li>
