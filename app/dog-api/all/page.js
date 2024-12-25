@@ -49,18 +49,18 @@ export default function PageAllDogsAPI() {
                 <div className="container mx-auto px-4 py-8">
                     <h1 className="text-3xl font-bold mb-4 mt-5">End-point API dogs</h1>
                     <ul className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <li className="border-b-2 border-blue-400 pb-2">
+                    <li className="border-b-2 border-blue-400 pb-2 font-bold">
                             <Link href="/dog-api/all">List all of dogs</Link>
                         </li>
-                        <li className="border-b-2 border-blue-400 pb-2">
+                        <li className="border-b-2 border-blue-400 pb-2 font-bold">
                             <Link href="/dog-api/keyword">List dogs by keyword</Link>
                             
                         </li>
                         <li className="border-b-2 border-blue-400 pb-2">List category dogs</li>
-                        <li className="border-b-2 border-blue-400 pb-2">
+                        <li className="border-b-2 border-blue-400 pb-2 font-bold">
                             <Link href="/dog-api/">Detail of dog by ID</Link>
                         </li>
-                        <li className="border-b-2 border-blue-400 pb-2">
+                        <li className="border-b-2 border-blue-400 pb-2 font-bold">
                             <Link href="/dog-api/random">Random 5 dogs</Link>
                         </li>
                     </ul>

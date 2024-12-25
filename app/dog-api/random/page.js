@@ -10,7 +10,7 @@ export default function PageRandomDogsAPI() {
     const fetchData = async () => {
         try {
             // Randomly select between 0 and 1
-            const randomIndex = Math.floor(Math.random() * 5);
+            const randomIndex = Math.floor(Math.random() * 2);
 
             const response = await fetch(`https://hinntam.vercel.app/restapi/part-1/api/${randomIndex}`);
             const result = await response.json();
@@ -26,7 +26,7 @@ export default function PageRandomDogsAPI() {
 
     useEffect(() => {
         fetchData();
-    }, [data]);
+    }, []);
 
     return (
         <div className="flex flex-col md:flex-row">
@@ -53,18 +53,18 @@ export default function PageRandomDogsAPI() {
                 <div className="container mx-auto px-4 py-8">
                     <h1 className="text-3xl font-bold mb-4 mt-5">End-point API dogs</h1>
                     <ul className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <li className="border-b-2 border-blue-400 pb-2">
+                    <li className="border-b-2 border-blue-400 pb-2 font-bold">
                             <Link href="/dog-api/all">List all of dogs</Link>
                         </li>
-                        <li className="border-b-2 border-blue-400 pb-2">
+                        <li className="border-b-2 border-blue-400 pb-2 font-bold">
                             <Link href="/dog-api/keyword">List dogs by keyword</Link>
                             
                         </li>
                         <li className="border-b-2 border-blue-400 pb-2">List category dogs</li>
-                        <li className="border-b-2 border-blue-400 pb-2">
+                        <li className="border-b-2 border-blue-400 pb-2 font-bold">
                             <Link href="/dog-api/">Detail of dog by ID</Link>
                         </li>
-                        <li className="border-b-2 border-blue-400 pb-2">
+                        <li className="border-b-2 border-blue-400 pb-2 font-bold">
                             <Link href="/dog-api/random">Random 5 dogs</Link>
                         </li>
                     </ul>
