@@ -10,9 +10,9 @@ export default function PageRandomDogsAPI() {
     const fetchData = async () => {
         try {
             // Randomly select between 0 and 1
-            const randomIndex = Math.floor(Math.random() * 2);
+            const randomIndex = Math.floor(Math.random() * 4);
 
-            const response = await fetch(`https://hinntam.vercel.app/restapi/part-1/api/${randomIndex}`);
+            const response = await fetch(`https://hinntam.vercel.app/restapi/part-1/api/dogs/${randomIndex}`);
             const result = await response.json();
             // Assuming the image data is in result[randomIndex].img and is a buffer
             

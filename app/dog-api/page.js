@@ -105,13 +105,7 @@ export default function PageDogAPI() {
                         </li>
                     </ul>
 
-                    <h1 className="text-3xl font-bold mb-4 mt-5">List all of Dogs</h1>
-                    <p className="mb-4 border-b-2 border-gray-500">
-                        https://hinntam.vercel.app/restapi/part-1/api/dogs/
-                    </p>
-                    <p className="mb-4 font-bold">
-                        Display list all of dogs
-                    </p>
+                    
                     
                   
                     
