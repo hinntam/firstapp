@@ -77,7 +77,7 @@ export default function PageAllDogsAPI() {
                         </li>
                         <li className="border-b-2 border-gray-300 pb-2">
                             <h1 className="font-bold">RESULT</h1>
-                            <div className="border-b-2 border-gray-300 p-2 flex flex-col items-center">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {
                                 data?.map((item, index) => (
                                     <div key={index} className="mb-4">
