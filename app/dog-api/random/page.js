@@ -10,7 +10,7 @@ export default function PageRandomDogsAPI() {
     const fetchData = async () => {
         try {
             // Randomly select between 0 and 1
-            const randomIndex = Math.floor(Math.random() *3);
+            const randomIndex = Math.floor(Math.random() *2);
 
             const response = await fetch(`https://hinntam.vercel.app/restapi/part-1/api/dogs/${randomIndex}`);
             const result = await response.json();

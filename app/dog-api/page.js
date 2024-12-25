@@ -42,7 +42,7 @@ export default function PageDogAPI() {
         <div className="flex flex-col md:flex-row">
             <nav className="w-full md:w-64 h-auto md:h-screen bg-gray-800 text-white fixed md:relative">
                 <div className="p-4">
-                    <h2 className="text-2xl font-bold mb-4">Navigation</h2>
+                    <h2 className="text-2xl font-bold mb-4">HinntamAPI!</h2>
                     <ul>
                         <li className="mb-2 border-b-2 border-blue-400">
                             <Link href="/">
@@ -59,7 +59,7 @@ export default function PageDogAPI() {
                 </div>
             </nav>
             <main className="ml-0 md:ml-10 p-4 w-full">
-                <h1 className="text-4xl font-bold mb-8 text-center">Dog API</h1>
+                <h1 className="text-4xl font-bold mb-8 text-center">FREE API for Dogs</h1>
                 <div className="container mx-auto px-4 py-8">
                     <h1 className="text-3xl font-bold mb-4 mt-5">End-point API dogs</h1>
                     <ul className="grid grid-cols-1 md:grid-cols-5 gap-4">
