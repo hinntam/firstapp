@@ -87,13 +87,11 @@ export default function PageRandomDogsAPI() {
                         <li className="border-b-2 border-gray-300 pb-2">
                             <h1 className="font-bold">RESULT</h1>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {
-                                data?.map((item, index) => (
-                                    <div key={index} className="mb-4">
-                                        <img src={`data:image/jpeg;base64,${Buffer.from(item.img).toString('base64')}`} alt={item.name} className="w-64 h-64" />
-                                    </div>
-                                ))
-                            }
+                            {data && (
+                                <div>
+                                   {imageSrc && <img src={imageSrc} alt="Dog" className="w-1/2" />}
+                                </div>
+                            )}
                             </div>
                         </li>
                     </ul>
