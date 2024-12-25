@@ -2,26 +2,16 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function PageDogAPI() {
+export default function PageKeywordDogsAPI() {
     const [data, setData] = useState(null);
     const [imageSrc, setImageSrc] = useState('');
     const [id, setId] = useState(1);
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`https://hinntam.vercel.app/restapi/part-1/api/dogs/${id}`);
+            const response = await fetch(`https://hinntam.vercel.app/restapi/part-1/api/dogs`);
             const result = await response.json();
-            console.log(result);
-
-            // Randomly select between 0 and 1
-            const randomIndex = Math.floor(Math.random() * 2);
-
             // Assuming the image data is in result[randomIndex].img and is a buffer
-            if (result.img) {
-                const base64String = Buffer.from(result.img).toString('base64');
-                setImageSrc(`data:image/jpeg;base64,${base64String}`);
-            }
-
             setData(result);
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -32,11 +22,7 @@ export default function PageDogAPI() {
 
     useEffect(() => {
         fetchData();
-    }, [id]);
-
-    const handleInputChange = (event) => {
-        setId(event.target.value);
-    };
+    }, [data]);
 
     return (
         <div className="flex flex-col md:flex-row">
@@ -67,27 +53,21 @@ export default function PageDogAPI() {
                             <Link href="/dog-api/all">List all of dogs</Link>
                         </li>
                         <li className="border-b-2 border-blue-400 pb-2">
-                            <Link href="/dog-api/keyword">List dogs by keyword</Link>
-                            
+                            List dogs by keyword
                         </li>
                         <li className="border-b-2 border-blue-400 pb-2">List category dogs</li>
-                        <li className="border-b-2 border-blue-400 pb-2">
-                            <Link href="/dog-api/">Detail of dog by ID</Link>
-                        </li>
-                        <li className="border-b-2 border-blue-400 pb-2">
-                            <Link href="/dog-api/random">Random 5 dogs</Link>
-                        </li>
+                        <li className="border-b-2 border-blue-400 pb-2">Detail of dog by ID</li>
+                        <li className="border-b-2 border-blue-400 pb-2">Random 5 dogs</li>
                     </ul>
-                    <h1 className="text-3xl font-bold mb-4 mt-5">
-                        <Link href="/dog-api/">Display dog by ID</Link>
-                    </h1>
+                    
+
+                    <h1 className="text-3xl font-bold mb-4 mt-5">List of Dogs by Name</h1>
                     <p className="mb-4 border-b-2 border-gray-500">
-                        https://hinntam.vercel.app/restapi/part-1/api/dogs/:id
+                        https://hinntam.vercel.app/restapi/part-1/api/dogs/
                     </p>
                     <p className="mb-4 font-bold">
-                        Display dog detail by ID
+                        Display list all of dogs
                     </p>
-
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <li className="border-b-2 border-gray-300 pb-2">
                             <h2 className="font-bold">JSON</h2>
@@ -97,22 +77,17 @@ export default function PageDogAPI() {
                         </li>
                         <li className="border-b-2 border-gray-300 pb-2">
                             <h1 className="font-bold">RESULT</h1>
-                            {data && (
-                                <div>
-                                   {imageSrc && <img src={imageSrc} alt="Dog" className="w-1/2" />}
-                                </div>
-                            )}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {
+                                data?.map((item, index) => (
+                                    <div key={index} className="mb-4">
+                                        <img src={`data:image/jpeg;base64,${Buffer.from(item.img).toString('base64')}`} alt={item.name} className="w-64 h-64" />
+                                    </div>
+                                ))
+                            }
+                            </div>
                         </li>
                     </ul>
-
-                    <h1 className="text-3xl font-bold mb-4 mt-5">List all of Dogs</h1>
-                    <p className="mb-4 border-b-2 border-gray-500">
-                        https://hinntam.vercel.app/restapi/part-1/api/dogs/
-                    </p>
-                    <p className="mb-4 font-bold">
-                        Display list all of dogs
-                    </p>
-                    
                   
                     
                 </div>
