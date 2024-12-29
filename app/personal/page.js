@@ -12,10 +12,10 @@ export default function Home() {
     let category=item.name;
     if(groupCategory[category]==null) groupCategory[category]=[];
     groupCategory[category].push(item);
-    setLstGroup(rs);
+    return groupCategory;
  },{})
  useEffect(()=>{
-    ListGroup();
+    setLstGroup(ListGroup());
  })
   return (
     <div className="container mx-auto px-4">
