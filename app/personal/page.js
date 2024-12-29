@@ -12,12 +12,11 @@ export default function Home() {
     let category=item.name;
     if(groupCategory[category]==null) groupCategory[category]=[];
     groupCategory[category].push(item);
-    return groupCategory;
+    setLstGroup(rs);
  },{})
  useEffect(()=>{
-    const rs=ListGroup();
-    setLstGroup(rs);
- },[items])
+    ListGroup();
+ })
   return (
     <div className="container mx-auto px-4">
       <main className="flex flex-col md:flex-row">

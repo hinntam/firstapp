@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -93,7 +94,7 @@ export default function PageRandomDogsAPI() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {data && (
                                 <div>
-                                   {imageSrc && <img src={imageSrc} alt="Dog" className="w-1/2" />}
+                                   {imageSrc &&  <Image src={imageSrc} alt="Dog" className="w-1/2" />}
                                 </div>
                             )}
                             </div>

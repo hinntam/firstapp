@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function DogPage(){
@@ -75,7 +76,7 @@ export default function DogPage(){
                             <p className="mr-4">Name:{dog.name}</p>
                             <p className="mr-4">Age:{dog.age}</p>
                             <p className="mr-4">Desc:{dog.description}</p>
-                            <p className="mr-4"><img src={`data:image/jpeg;base64,${Buffer.from(dog.img).toString('base64')}`} alt="dog" className="w-20 h-20"/></p>
+                            <p className="mr-4"><Image src={`data:image/jpeg;base64,${Buffer.from(dog.img).toString('base64')}`} alt="dog" className="w-20 h-20"/></p>
                         </div>
                     ))
                 }

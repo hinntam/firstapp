@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -86,7 +87,8 @@ export default function PageKeywordDogsAPI() {
                             {
                                 data?.map((item, index) => (
                                     <div key={index} className="mb-4">
-                                        <img src={`data:image/jpeg;base64,${Buffer.from(item.img).toString('base64')}`} alt={item.name} className="w-64 h-64" />
+                                        
+                                        <Image src={`data:image/jpeg;base64,${Buffer.from(item.img).toString('base64')}`} alt={item.name} className="w-64 h-64" />
                                     </div>
                                 ))
                             }

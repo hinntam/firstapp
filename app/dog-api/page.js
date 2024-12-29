@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -32,7 +33,7 @@ export default function PageDogAPI() {
 
     useEffect(() => {
         fetchData();
-    }, [id]);
+    });
 
     const handleInputChange = (event) => {
         setId(event.target.value);
@@ -42,7 +43,7 @@ export default function PageDogAPI() {
         <div className="flex flex-col md:flex-row">
             <nav className="w-full md:w-64 h-auto md:h-screen bg-gray-800 text-white fixed md:relative">
                 <div className="p-4">
-                    <h2 className="text-2xl font-bold mb-4">HinntamAPI!</h2>
+                    <h2 className="text-2xl font-bold mb-4">Dog API!</h2>
                     <ul>
                         <li className="mb-2 border-b-2 border-blue-400">
                             <Link href="/">
@@ -99,7 +100,7 @@ export default function PageDogAPI() {
                             <h1 className="font-bold">RESULT</h1>
                             {data && (
                                 <div>
-                                   {imageSrc && <img src={imageSrc} alt="Dog" className="w-1/2" />}
+                                   {imageSrc && <Image src={imageSrc} alt="Dog" className="w-1/2" />}
                                 </div>
                             )}
                         </li>
