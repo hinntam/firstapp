@@ -8,18 +8,19 @@ const projects = [
   {
     title: 'Employer session -ELK resources',
     description: 'This session is open to all students and alumni from the following School of Health & Public Safety',
-    image: '/assets/movies.png', // Replace with your project screenshot
+    image: '/assets/1000009409.jpg', // Replace with your project screenshot
   },
   {
     title: 'Employer session -ELK resources',
     description: 'This session is open to all students and alumni from the following School of Health & Public Safety',
-    image: '/assets/movies.png', // Replace with your project screenshot
+    image: '/assets/1000009419.jpg', // Replace with your project screenshot
   },
   {
     title: 'Employer session -ELK resources',
     description: 'This session is open to all students and alumni from the following School of Health & Public Safety',
-    image: '/assets/movies.png', // Replace with your project screenshot
+    image: '/assets/1000009420.jpg', // Replace with your project screenshot
   },
+ 
 ];
 
 const Activity = () => (
@@ -33,11 +34,10 @@ const Activity = () => (
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
           >
             
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-600">{project.title}</h3>
+            <Image src={project.image} alt={project.title} width={300} height={200} />
             <p className="text-gray-600 mb-4">{project.description}</p>
             <div className="mb-4">
-              <h4 className="text-sm font-bold">Technologies:</h4>
-            
             </div>
             
           </div>
