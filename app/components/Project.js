@@ -77,7 +77,7 @@ const Projects = () => (
             <p className="text-gray-600 mb-4">{project.description}</p>
             <div className="mb-4">
               <h4 className="text-sm font-bold">Technologies:</h4>
-              <ul className="flex space-x-2 mt-2">
+              <ul className="flex space-x-2 mt-2 overflow-x-auto">
                 {project.technologies.map((tech, i) => (
                   <li
                     key={i}
