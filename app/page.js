@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Projects from './components/Project';
 import Skills from './components/Skill';
 import Activity from './components/Activity';
+import Certificate from './components/Certificate';
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
         {/* Hero Section */}
         <Hero/>
         <Skills/>
+        <Certificate/>
         <Projects/>
         {/* Contact Section */}
         <Activity/>
