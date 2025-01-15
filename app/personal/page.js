@@ -8,6 +8,11 @@ export default function Home() {
   const[title,setTitle]=useState('');
   const[items ,setItems]=useState(itemsData);
   const[lstGroup,setLstGroup]=useState({});
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+  };
   const ListGroup=()=>items.reduce((groupCategory,item)=>{
     let category=item.name;
     if(groupCategory[category]==null) groupCategory[category]=[];
@@ -18,28 +23,38 @@ export default function Home() {
     setLstGroup(ListGroup());
  })
   return (
-    <div className="container mx-auto px-4">
+    <div className="nextra-nav-container nx-sticky nx-top-0 nx-z-20 nx-w-full nx-bg-transparent print:nx-hidden">
+      <h2 className=" text-black text-center font-bold justify-center">Learning NextJS</h2>
       <main className="flex flex-col md:flex-row">
+         {/* Toggle Button for Mobile */}
+         <button
+                className="md:hidden p-4 bg-blue-500 text-white"
+                onClick={toggleMenu}
+            >
+                {isMenuOpen ? 'Close Menu' : 'Open Menu'}
+            </button>
       {/* Left Sidebar - Contents */}
-
+      
+                
       <div className="md:w-1/4 p-4">
         {
           
-          <div className="bg-black">
+          <div className={`nx-flex nx-flex-col nx-gap-1 nextra-menu-desktop ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
           {
             items.map((item) =>(
+              
               <div key={item.id} className="nx-flex nx-flex-col nx-gap-1 nextra-menu-desktop max-md:nx-hidden">
-                <h2 className="nx-flex nx-flex-col nx-gap-1 active text-cyan-50 text-center font-bold">{item.name}</h2>
-                <ul>
+                
+               <ul>
                 {
                     item.content.map((i)=>(
-                      <li key={i.id} >
-                        <h2 className="text-sm font-bold text-blue-50 ml-2">{i.name}</h2>
+                      <li key={i.id} className="nx-items-center nx-justify-between nx-gap-2 nx-text-left nx-w-full nx-flex">
+                        <h2 className="text-sm font-bold text-black ml-2">{i.name}</h2>
                         {
                           <ul>
                             {
                               i.detail.map((idtail)=>(
-                                <li key={idtail.id} className="p-2 m-4 bg-slate-900 max-w-sm cursor-pointer">
+                                <li key={idtail.id} className="pl-3 cursor-pointer">
                                   <Item itemObj={idtail} handleClick={(url,title)=>
                                     {
                                       setUrl(url)
@@ -65,18 +80,11 @@ export default function Home() {
 
       {/* Center - Video Player */}
       <div className="md:w-1/2 p-4">
-        <VideoPlayer url={url}
         
-        />
         {/**Content */}
         <div dangerouslySetInnerHTML={{ __html: title }} />
         {/**Right handside */}
-        <div className="flex justify-between items-center w-full max-w-2xl mt-4">
-          <button className=" hover:underline bg-gray-500 border p-1 text-cyan-50">Overview</button>
-          <button className="hover:underline bg-gray-500 border p-1 text-cyan-50">Q&A</button>
-          <button className=" hover:underline bg-gray-500 border p-1 text-cyan-50">Notebook</button>
-          <button className=" hover:underline bg-gray-500 border p-1 text-cyan-50">Transcript</button>
-        </div>
+        
         
       </div>
 

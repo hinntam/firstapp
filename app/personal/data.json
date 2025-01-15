@@ -28,7 +28,7 @@
                     "id":3,
                     "link":"https://www.youtube.com/watch?v=6NegFl9p_sE",
                     "desc":"Guide: Cloning a Next.js Project Repository",
-                    "content":"<b>Guide: Cloning a Next.js Project Repository</b>."
+                    "content":"<b>Guide: Cloning a Next.js Project Repository</b>.<br/>Open GitHub Desktop and select File -> Clone repository...<br/>Choose the tab URL and enter the following repository URL<br>Choose a local path where you want to clone the repository to on your computer. It is recommended to NOT use a location that is synced with a cloud service such as OneDrive, Google Drive, or Dropbox. Why? When building and running the application, it can create a large number of files and folders that can cause sync issues with cloud services."
                 },
                 {
                     "id":4,
