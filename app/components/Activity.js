@@ -20,6 +20,11 @@ const projects = [
     description: 'This session is open to all students and alumni from the following School of Health & Public Safety',
     image: '/assets/1000009420.jpg', // Replace with your project screenshot
   },
+  {
+    title: 'Orientation - SAIT',
+    description: 'This session is open to all students and alumni from the following SAIT School',
+    image: '/assets/sait.jpg', // Replace with your project screenshot
+  },
  
 ];
 

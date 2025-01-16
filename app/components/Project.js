@@ -42,15 +42,6 @@ const projects = [
     video:'/assets/whattowatch.mp4'
   },
   {
-    title: 'Sprout App',
-    description: 'An application help to take care plant.',
-    technologies: ['React Native', 'Node.js', 'MongoDB', 'Express'],
-    image: '/assets/albertadrivingtest.png',
-    demoLink: '#',
-    codeLink: '#',
-    video:'/assets/sprout.mp4'
-  },
-  {
     title: 'Parking Master App',
     description: 'It designed to help users find parking spots with ease. The application is developed using JavaScript, React Native, and Expo, with CSS for styling. The project leverages a mix of languages including Kotlin, Ruby, Objective-C++, JavaScript, and Objective-C..',
     technologies: ['React', 'Nextjs', 'GoogleMap API', 'Tailwind CSS'],

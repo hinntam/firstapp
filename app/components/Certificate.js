@@ -25,6 +25,16 @@ const certificate = [
     description: 'Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.',
     image: '/assets/nodejs.png', // Replace with your project screenshot
   },
+  {
+    title: 'ISTQB',
+    description: 'The International Software Testing Qualifications Board (ISTQB) is a software testing qualification certification organization that operates internationally.',
+    image: '/assets/istqb.png', // Replace with your project screenshot
+  },
+  {
+    title: 'AWS Practitioner',
+    description: 'AWS Certified Cloud Practitioner is an entry-level certification that provides a platform to validate your knowledge of the AWS Cloud.',
+    image: '/assets/aws.png', // Replace with your project screenshot
+  },
  
 ];
 
