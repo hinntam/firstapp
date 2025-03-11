@@ -1,0 +1,96 @@
+[
+    {
+      "id": "1",
+      "name": "Learning IElTS GENERAL",
+      "description":"Learning IElTS GENERAL",
+      "rate": 5,
+      "content": 
+      [
+        {
+            "id":1,
+            "name":"Week1",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/Week1/listening.png",
+                    "audio":"./assets/data/Week1/listening.mp3",
+                    "desc":"Listening and reading",
+                    "content":"Listening and reading"
+                    
+                    
+                }
+                
+            ]
+        },
+        {
+            "id":2,
+            "name":"Week2",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/Week2/listening.png",
+                    "audio":"./assets/data/Week2/listening.mp3",
+                    "desc":"Listening and reading",
+                    "content":"Listening and reading"
+                    
+                    
+                }
+                
+                
+            ]
+        },
+        {
+            "id":3,
+            "name":"Week3",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/Week3/listening.png",
+                    "audio":"./assets/data/Week3/listening.mp3",
+                    "desc":"Listening and reading",
+                    "content":"Listening and reading"
+                    
+                    
+                }
+                
+                
+            ]
+        },
+        {
+            "id":4,
+            "name":"Week4",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/Week4/listening.png",
+                    "audio":"./assets/data/Week4/listening.mp3",
+                    "desc":"Listening and reading",
+                    "content":"Listening and reading"
+                    
+                    
+                }
+                
+                
+            ]
+        },
+        {
+            "id":5,
+            "name":"Week5",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/Week5/listening.png",
+                    "audio":"./assets/data/Week5/listening.mp3",
+                    "desc":"Listening and reading",
+                    "content":"Listening and reading"
+                    
+                    
+                }
+                
+                
+            ]
+        }
+        
+      ]
+    }
+]

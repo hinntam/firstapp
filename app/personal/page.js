@@ -1,11 +1,15 @@
 "use client"
 import { useEffect, useState } from "react";
 import VideoPlayer from "./video/video-player";
-import itemsData from './data.json';
+import itemsData from './dataielts.json';
 import Item from "./items";
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 export default function Home() {
   const[url,setUrl]= useState('https://www.youtube.com/watch?v=Ofux_4c94FI');
   const[title,setTitle]=useState('');
+  const[audio,setAudio]=useState('');
+  const[img,setImg]=useState('');
   const[items ,setItems]=useState(itemsData);
   const[lstGroup,setLstGroup]=useState({});
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +28,7 @@ export default function Home() {
  })
   return (
     <div className="nextra-nav-container nx-sticky nx-top-0 nx-z-20 nx-w-full nx-bg-transparent print:nx-hidden">
-      <h2 className=" text-black text-center font-bold justify-center">Learning NextJS</h2>
+      <h2 className=" text-black text-center font-bold justify-center">Learning IELTS</h2>
       <main className="flex flex-col md:flex-row">
          {/* Toggle Button for Mobile */}
          <button
@@ -59,6 +63,8 @@ export default function Home() {
                                     {
                                       setUrl(url)
                                       setTitle(title);
+                                      setAudio(idtail.audio);
+                                      setImg(idtail.image);
                                     }}/>
                                 </li>
                               ))
@@ -84,7 +90,17 @@ export default function Home() {
         {/**Content */}
         <div dangerouslySetInnerHTML={{ __html: title }} />
         {/**Right handside */}
-        
+        {
+          img && <img src={img} alt="image" className="w-full"/>
+        }
+        {
+        audio && <AudioPlayer
+          autoPlay
+          src={audio}
+          onPlay={e => console.log("onPlay")}
+          // other props here
+          />
+        }
         
       </div>
 
