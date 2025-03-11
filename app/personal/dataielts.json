@@ -16,7 +16,8 @@
                     "image1":"",
                     "audio":"./assets/data/week1/listening.mp3",
                     "desc":"Listening and reading",
-                    "content":"Listening and reading"
+                    "content":"Listening and reading",
+                    "answer": "The answer from 1 - 10 <br/> 1. 69 <br/> 2. Stream <br/> 3. discovery <br/> 4. map <br/> 5. visitor <br/> 6. experience <br/> 7. creative <br/> 8. skills <br/> 9. 4.95 <br/> 10. Leaders"
                     
                     
                 }
@@ -33,7 +34,8 @@
                     "image1":"./assets/data/week2/listening1.png",
                     "audio":"./assets/data/week2/listening.mp3",
                     "desc":"Listening and reading",
-                    "content":"Listening and reading"
+                    "content":"Listening and reading",
+                    "answer": "The answer from 1 - 10 <br/> 1. MATHIESON <br/> 2. Beginners <br/> 3. college <br/> 4. new <br/> 5. 11 <br/> 6. instrument <br/> 7. ear <br/> 8. lapping <br/> 9. Recording <br/>"
                     
                     
                 }
@@ -51,7 +53,9 @@
                     "image1":"./assets/data/week3/listening1.png",
                     "audio":"./assets/data/week3/listening.mp3",
                     "desc":"Listening and reading",
-                    "content":"Listening and reading"
+                    "content":"Listening and reading",
+                    "answer": "The answer from 1 - 10 <br/> 1. KAEDAN <br/> 2. locker <br/> 3. passport <br/> 4. uniform <br/> 5. third <br/> 6. 0412665903 <br/> 7. yellow <br/> 8. plastic <br/> 9. ice <br/>"
+                    
                     
                     
                 }
@@ -69,7 +73,8 @@
                     "image1":"./assets/data/week4/listening1.png",
                     "audio":"./assets/data/week4/listening.mp3",
                     "desc":"Listening and reading",
-                    "content":"Listening and reading"
+                    "content":"Listening and reading",
+                    "answer": "The answer from 11 - 12: B - C and 13 - 14: D - B;<br/> 15: C;<br/> 16:B;<br/>17: B;<br/> 18:C;<br/> 19:A;<br/> 20:A"
                     
                     
                 }
@@ -87,7 +92,8 @@
                     "image1":"./assets/data/week5/listening1.png",
                     "audio":"./assets/data/week5/listening.mp3",
                     "desc":"Listening and reading",
-                    "content":"Listening and reading"
+                    "content":"Listening and reading",
+                    "answer": "The answer from 11 - 12: B - A and 13 - 14: A - C;<br/> 15: F;<br/> 16:G;<br/>17: E;<br/> 18:A;<br/> 19:C;<br/> 20:B"
                     
                     
                 }

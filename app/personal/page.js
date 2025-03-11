@@ -12,6 +12,8 @@ export default function Home() {
   const[audio,setAudio]=useState('');
   const[img,setImg]=useState('');
   const[img1,setImg1]=useState('');
+  const[answer,setanswer]=useState('');
+  
   const[items ,setItems]=useState(itemsData);
   const[lstGroup,setLstGroup]=useState({});
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,6 +70,7 @@ export default function Home() {
                                       setAudio(idtail.audio);
                                       setImg(idtail.image);
                                       setImg1(idtail.image1);
+                                      setanswer(idtail.answer);
                                     }}/>
                                 </li>
                               ))
@@ -108,6 +111,7 @@ export default function Home() {
           // other props here
           />
         }
+        <div dangerouslySetInnerHTML={{ __html: answer }} />
         
       </div>
 
