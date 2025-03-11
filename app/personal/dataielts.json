@@ -13,7 +13,7 @@
                 {
                     "id":1,
                     "image":"./assets/data/week1/listening.png",
-                    "image1":"./assets/data/week1/listening1.png",
+                    "image1":"",
                     "audio":"./assets/data/week1/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
