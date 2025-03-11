@@ -13,6 +13,7 @@
                 {
                     "id":1,
                     "image":"./assets/data/Week1/listening.png",
+                    "image1":"./assets/data/Week1/listening1.png",
                     "audio":"./assets/data/Week1/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
@@ -29,6 +30,7 @@
                 {
                     "id":1,
                     "image":"./assets/data/Week2/listening.png",
+                    "image1":"./assets/data/Week2/listening1.png",
                     "audio":"./assets/data/Week2/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
@@ -46,6 +48,7 @@
                 {
                     "id":1,
                     "image":"./assets/data/Week3/listening.png",
+                    "image1":"./assets/data/Week3/listening1.png",
                     "audio":"./assets/data/Week3/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
@@ -63,6 +66,7 @@
                 {
                     "id":1,
                     "image":"./assets/data/Week4/listening.png",
+                    "image1":"./assets/data/Week4/listening1.png",
                     "audio":"./assets/data/Week4/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
@@ -80,6 +84,7 @@
                 {
                     "id":1,
                     "image":"./assets/data/Week5/listening.png",
+                    "image1":"./assets/data/Week5/listening1.png",
                     "audio":"./assets/data/Week5/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"

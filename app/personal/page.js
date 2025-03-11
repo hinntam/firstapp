@@ -5,11 +5,13 @@ import itemsData from './dataielts.json';
 import Item from "./items";
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+import Link from "next/link";
 export default function Home() {
   const[url,setUrl]= useState('https://www.youtube.com/watch?v=Ofux_4c94FI');
-  const[title,setTitle]=useState('');
+  const[title,setTitle]=useState('Click on the left side to view the content');
   const[audio,setAudio]=useState('');
   const[img,setImg]=useState('');
+  const[img1,setImg1]=useState('');
   const[items ,setItems]=useState(itemsData);
   const[lstGroup,setLstGroup]=useState({});
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,6 +67,7 @@ export default function Home() {
                                       setTitle(title);
                                       setAudio(idtail.audio);
                                       setImg(idtail.image);
+                                      setImg1(idtail.image1);
                                     }}/>
                                 </li>
                               ))
@@ -94,6 +97,10 @@ export default function Home() {
           img && <img src={img} alt="image" className="w-full"/>
         }
         {
+          img1 && <img src={img1} alt="image" className="w-full"/>
+        }
+        
+        {
         audio && <AudioPlayer
           autoPlay
           src={audio}
@@ -114,6 +121,8 @@ export default function Home() {
         <div>
           <h3 className="font-semibold">Help me understand this better</h3>
           <p className="text-gray-700">Questions and explanations to clarify the content.</p>
+          <a className="text-blue-900" target="_blank" href="https://drive.google.com/drive/folders/1AgidfS0hiSGDGKV9CU17HI5gXzmfUr6Z?fbclid=IwY2xjawI9FCdleHRuA2FlbQIxMAABHRSvi72yZMzhmGKl0-g6_uBxy5a_sR0QvcZiWHQZiILfNKn4tbGo1OuT2w_aem_9lrIAGZYJsreNRsafkDrsA"
+          >Google Drive IELTS GENERAL</a>
         </div>
       </div>
       </main>
