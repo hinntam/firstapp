@@ -12,8 +12,8 @@
             "detail":[
                 {
                     "id":1,
-                    "image":"./assets/data/Week1/listening.png",
-                    "audio":"./assets/data/Week1/listening.mp3",
+                    "image":"./assets/data/week1/listening.png",
+                    "audio":"./assets/data/week1/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
                     
@@ -28,8 +28,8 @@
             "detail":[
                 {
                     "id":1,
-                    "image":"./assets/data/Week2/listening.png",
-                    "audio":"./assets/data/Week2/listening.mp3",
+                    "image":"./assets/data/week2/listening.png",
+                    "audio":"./assets/data/week2/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
                     
@@ -45,8 +45,8 @@
             "detail":[
                 {
                     "id":1,
-                    "image":"./assets/data/Week3/listening.png",
-                    "audio":"./assets/data/Week3/listening.mp3",
+                    "image":"./assets/data/week3/listening.png",
+                    "audio":"./assets/data/week3/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
                     
@@ -62,8 +62,8 @@
             "detail":[
                 {
                     "id":1,
-                    "image":"./assets/data/Week4/listening.png",
-                    "audio":"./assets/data/Week4/listening.mp3",
+                    "image":"./assets/data/week4/listening.png",
+                    "audio":"./assets/data/week4/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
                     
@@ -79,8 +79,8 @@
             "detail":[
                 {
                     "id":1,
-                    "image":"./assets/data/Week5/listening.png",
-                    "audio":"./assets/data/Week5/listening.mp3",
+                    "image":"./assets/data/week5/listening.png",
+                    "audio":"./assets/data/week5/listening.mp3",
                     "desc":"Listening and reading",
                     "content":"Listening and reading"
                     
