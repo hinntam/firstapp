@@ -5,7 +5,6 @@ import itemsData from './dataielts.json';
 import Item from "./items";
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import Link from "next/link";
 export default function Home() {
   const[url,setUrl]= useState('https://www.youtube.com/watch?v=Ofux_4c94FI');
   const[title,setTitle]=useState('Click on the left side to view the content');
@@ -13,6 +12,8 @@ export default function Home() {
   const[img,setImg]=useState('');
   const[img1,setImg1]=useState('');
   const[answer,setanswer]=useState('');
+  const[link1,setLink1]=useState('');
+  const[link2,setLink2]=useState('');
   
   const[items ,setItems]=useState(itemsData);
   const[lstGroup,setLstGroup]=useState({});
@@ -71,6 +72,8 @@ export default function Home() {
                                       setImg(idtail.image);
                                       setImg1(idtail.image1);
                                       setanswer(idtail.answer);
+                                      setLink1(idtail.link1);
+                                      setLink2(idtail.link2);
                                     }}/>
                                 </li>
                               ))
@@ -112,7 +115,8 @@ export default function Home() {
           />
         }
         <div dangerouslySetInnerHTML={{ __html: answer }} />
-        
+        {link1 && <iframe src={link1} width="100%" height="1000px"></iframe>}
+        {link2 && <iframe src={link2} width="100%" height="1000px"></iframe>}
       </div>
 
       {/* Right Sidebar - Q&A */}
