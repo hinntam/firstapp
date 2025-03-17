@@ -14,6 +14,7 @@ export default function Home() {
   const[answer,setanswer]=useState('');
   const[link1,setLink1]=useState('');
   const[link2,setLink2]=useState('');
+  const[link3,setLink3]=useState('');
   
   const[items ,setItems]=useState(itemsData);
   const[lstGroup,setLstGroup]=useState({});
@@ -67,13 +68,14 @@ export default function Home() {
                                   <Item itemObj={idtail} handleClick={(url,title)=>
                                     {
                                       setUrl(url)
-                                      setTitle(title);
+                                      setTitle(title + " " + i.name);
                                       setAudio(idtail.audio);
                                       setImg(idtail.image);
                                       setImg1(idtail.image1);
                                       setanswer(idtail.answer);
                                       setLink1(idtail.link1);
                                       setLink2(idtail.link2);
+                                      setLink3(idtail.link3);
                                     }}/>
                                 </li>
                               ))
@@ -115,6 +117,7 @@ export default function Home() {
           />
         }
         <div dangerouslySetInnerHTML={{ __html: answer }} />
+        {link3 && <iframe src={link3} width="100%" height="1000px"></iframe>}
         {link1 && <iframe src={link1} width="100%" height="1000px"></iframe>}
         {link2 && <iframe src={link2} width="100%" height="1000px"></iframe>}
       </div>
