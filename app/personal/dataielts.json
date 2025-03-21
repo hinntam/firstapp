@@ -311,6 +311,67 @@
                 }
                 
             ]
+        },
+        {
+            "id":6,
+            "name":"Week6",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/week6/listening.png",
+                    "image1":"./assets/data/week6/listening1.png",
+                    "audio":"./assets/data/week6/listening.mp3",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Listening",
+                    "content":"Listening",
+                    "answer": "The answer "
+                    
+                    
+                },
+                {
+                    "id":2,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"./assets/data/week6/reading.pdf",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Reading",
+                    "content":"Reading....",
+                    "answer": ""
+                    
+                },
+                {
+                    "id":3,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"./assets/data/week6/writting.docx",
+                    "link3":"",
+                    "desc":"Writting",
+                    "content":"Writing....",
+                    "answer": ""
+                    
+                }
+                ,
+                {
+                    "id":4,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"./assets/data/week6/writting.docx",
+                    "link3":"https://us06web.zoom.us/rec/share/n-4WB780XRZcWS1v2iRPBbvBTCKZH-3UJxo3eVA8nNXacMr39ZncYpi3Pi5bfXdh.iAQGo98JB6BQ7hQa?fbclid=IwY2xjawJANVhleHRuA2FlbQIxMAABHfa5lczL5j9jg64UhYwODALplrH93pikdPI8XR5Ie4rtGBauzEKwZTUSuA_aem_LAP9ixbdYesTSfiSCw6kvA",
+                    "desc":"Speaking",
+                    "content":"Speaking....",
+                    "answer": ""
+                    
+                }
+                
+            ]
         }
         
       ]
