@@ -5,16 +5,7 @@ import VideoPlayer from "./Video";
 
 // components/Projects.js
 const projects = [
-  {
-    title: 'Employer session -ELK resources',
-    description: 'This session is open to all students and alumni from the following School of Health & Public Safety',
-    image: '/assets/1000009409.jpg', // Replace with your project screenshot
-  },
-  {
-    title: 'Employer session -ELK resources',
-    description: 'This session is open to all students and alumni from the following School of Health & Public Safety',
-    image: '/assets/1000009419.jpg', // Replace with your project screenshot
-  },
+  
   {
     title: 'Employer session -ELK resources',
     description: 'This session is open to all students and alumni from the following School of Health & Public Safety',
