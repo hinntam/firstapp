@@ -433,6 +433,128 @@
                 }
                 
             ]
+        },
+        {
+            "id":8,
+            "name":"Week8",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/week8/listening.png",
+                    "image1":"./assets/data/week8/listening1.png",
+                    "audio":"./assets/data/week8/listening.mp3",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Listening",
+                    "content":"Listening",
+                    "answer": "11. A <br/> 12.B <br/>"
+                    
+                    
+                },
+                {
+                    "id":2,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"./assets/data/week8/reading.pdf",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Reading",
+                    "content":"Reading....",
+                    "answer": ""
+                    
+                },
+                {
+                    "id":3,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"./assets/data/week8/writting.docx",
+                    "link3":"",
+                    "desc":"Writting",
+                    "content":"Writing....",
+                    "answer": ""
+                    
+                }
+                ,
+                {
+                    "id":4,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"https://us06web.zoom.us/rec/share/vdeFBW9zzo4_LzIms5ThIw-GFnQIrHP-0GSILRJy-dBgd_w67D1saLGE6Z3YjzJS.FCaG5ibd1ayJiTYG?fbclid=IwY2xjawJonPJleHRuA2FlbQIxMAABHqkXkNqROndpSCED_XkcnZRcb1o-yUETwEa__1x4qr-Y0EBSqRuKuhrGjqzT_aem_-Wst2FdvlLPmSNCsUD1GOg",
+                    "desc":"Speaking",
+                    "content":"Speaking....",
+                    "answer": ""
+                    
+                }
+                
+            ]
+        },
+        {
+            "id":9,
+            "name":"Week9",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/Week9/listening.png",
+                    "image1":"./assets/data/Week9/listening1.png",
+                    "audio":"./assets/data/Week9/listening.mp3",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Listening",
+                    "content":"Listening",
+                    "answer": "So sanh nhat (the most) more....almost....-> loai ngay <br/> 21/B (loai 3D printing) local restarant(loai) 22/ D <br/> 23/A <br/> 24/E <br/> 25/D <br/> 26/G <br/> 27/C <br/> 28/ B <br/> 29/F <br/> 30/H" 
+                    
+                    
+                },
+                {
+                    "id":2,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"./assets/data/Week9/reading.pdf",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Reading",
+                    "content":"Reading....",
+                    "answer": ""
+                    
+                },
+                {
+                    "id":3,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"./assets/data/Week9/writting.docx",
+                    "link3":"",
+                    "desc":"Writting",
+                    "content":"Writing....",
+                    "answer": ""
+                    
+                }
+                ,
+                {
+                    "id":4,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"https://us06web.zoom.us/rec/share/vdeFBW9zzo4_LzIms5ThIw-GFnQIrHP-0GSILRJy-dBgd_w67D1saLGE6Z3YjzJS.FCaG5ibd1ayJiTYG?fbclid=IwY2xjawJonPJleHRuA2FlbQIxMAABHqkXkNqROndpSCED_XkcnZRcb1o-yUETwEa__1x4qr-Y0EBSqRuKuhrGjqzT_aem_-Wst2FdvlLPmSNCsUD1GOg",
+                    "desc":"Speaking",
+                    "content":"Speaking....",
+                    "answer": ""
+                    
+                }
+                
+            ]
         }
         
       ]
