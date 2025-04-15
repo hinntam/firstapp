@@ -8,6 +8,7 @@ import Projects from './components/Project';
 import Skills from './components/Skill';
 import Activity from './components/Activity';
 import Certificate from './components/Certificate';
+import ChatWidget from './chatai/components/chatwidget';
 export default function Home() {
   return (
     <>
@@ -27,7 +28,10 @@ export default function Home() {
         {/* Contact Section */}
         <Activity/>
         <Contact />
-      </main>
+        <div className='text-black'>
+        <ChatWidget OPENAI_API_KEY={process.env.OPENAI_API_KEY} OPENAI_URL={process.env.OPENAI_URL}/>
+        </div>
+       </main>
     </>
   );
 }
