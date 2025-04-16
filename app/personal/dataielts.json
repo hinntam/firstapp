@@ -436,7 +436,7 @@
         },
         {
             "id":8,
-            "name":"Week8",
+            "name":"week8",
             "detail":[
                 {
                     "id":1,
@@ -497,13 +497,13 @@
         },
         {
             "id":9,
-            "name":"Week9",
+            "name":"week9",
             "detail":[
                 {
                     "id":1,
-                    "image":"./assets/data/Week9/listening.png",
-                    "image1":"./assets/data/Week9/listening1.png",
-                    "audio":"./assets/data/Week9/listening.mp3",
+                    "image":"./assets/data/week9/listening.png",
+                    "image1":"./assets/data/week9/listening1.png",
+                    "audio":"./assets/data/week9/listening.mp3",
                     "link1":"",
                     "link2":"",
                     "link3":"",
@@ -518,7 +518,7 @@
                     "image":"",
                     "image1":"",
                     "audio":"",
-                    "link1":"./assets/data/Week9/reading.pdf",
+                    "link1":"./assets/data/week9/reading.pdf",
                     "link2":"",
                     "link3":"",
                     "desc":"Reading",
@@ -532,7 +532,7 @@
                     "image1":"",
                     "audio":"",
                     "link1":"",
-                    "link2":"./assets/data/Week9/writting.docx",
+                    "link2":"./assets/data/week9/writting.docx",
                     "link3":"",
                     "desc":"Writting",
                     "content":"Writing....",
