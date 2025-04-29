@@ -7,14 +7,22 @@ import VideoPlayer from "./Video";
 const projects = [
   
   {
-    title: 'Employer session -ELK resources',
-    description: 'This session is open to all students and alumni from the following School of Health & Public Safety',
-    image: '/assets/1000009420.jpg', // Replace with your project screenshot
+    title: 'Sprout - Plant Care System - SAIT Capstone 2025',
+    description: 'I just completed my Software Development program at SAIT and wrapped up our capstone project',
+    image: '/assets/capcon.jpeg', // Replace with your project screenshot
+    link:'https://www.linkedin.com/feed/update/urn:li:activity:7322417779213533185/'
   },
   {
-    title: 'Orientation - SAIT',
-    description: 'This session is open to all students and alumni from the following SAIT School',
-    image: '/assets/sait.jpg', // Replace with your project screenshot
+    title: 'Sprout - Plant Care System - SAIT Capstone 2025',
+    description: 'I just completed my Software Development program at SAIT and wrapped up our capstone project',
+    image: '/assets/capcon.jpeg', // Replace with your project screenshot
+    link:'https://www.linkedin.com/feed/update/urn:li:activity:7322417779213533185/'
+  },
+  {
+    title: 'Sprout - Plant Care System - SAIT Capstone 2025',
+    description: 'I just completed my Software Development program at SAIT and wrapped up our capstone project',
+    image: '/assets/capcon.jpeg', // Replace with your project screenshot
+    link:'https://www.linkedin.com/feed/update/urn:li:activity:7322417779213533185/'
   },
  
 ];
@@ -31,10 +39,14 @@ const Activity = () => (
           >
             
             <h3 className="text-xl font-semibold mb-2 text-gray-600">{project.title}</h3>
-            <Image src={project.image} alt={project.title} width={300} height={200} />
-            <p className="text-gray-600 mb-4">{project.description}</p>
-            <div className="mb-4">
-            </div>
+            <Image src={project.image} alt={project.title} quality={80} width={500} height={500}/>
+            <p className="text-gray-600 text-justify">{project.description}</p>\
+            {project.link && (
+              <Link href={project.link} target="_blank" className="text-blue-500 hover:underline">
+                See more details
+                </Link>
+            )}
+          
             
           </div>
         ))}

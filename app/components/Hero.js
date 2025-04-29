@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import VideoPlayer from "./Video";
 
@@ -20,7 +21,7 @@ const Hero = () => (
           </div>
           <div className="flex flex-col">
             <div className="mr-6 flex flex-wrap items-center">
-              <Link href="./assets/resume/resume.docx" className="border-cyan-50 rounded">
+              <Link href="./assets/resume/resume.pdf" className="border-cyan-50 rounded">
               <button className="" tabindex="0">
                     <span className="indigo-400 rounded border-cyan-50">
                       <div className="flex flex-row items-center justify-center">Download CV 
@@ -45,7 +46,8 @@ const Hero = () => (
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8 sm:mt-8">
-          <VideoPlayer link="./assets/introduce.mp4"/>
+          
+          <Image src="/assets/capcon.jpeg" alt="Hero Image" width={500} height={500} className="rounded-lg shadow-lg" ></Image>
         </div>
         </div>
       </div>
