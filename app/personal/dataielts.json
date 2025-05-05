@@ -387,7 +387,7 @@
                     "link3":"",
                     "desc":"Listening",
                     "content":"Listening",
-                    "answer": ""
+                    "answer": "11/ C (hurt condition or asma)<br/> 12/E (specific question related to your need)<br/> 13 A (twice) <br/> 14.D (competitive that no you want)<br/> 15.A (less behind the runner <br/> 16.B(hated) <br/ 17. C (busy schedule)<br/> 18.A (not confidence)"
                     
                     
                 },
@@ -448,7 +448,7 @@
                     "link3":"",
                     "desc":"Listening",
                     "content":"Listening",
-                    "answer": "11. A <br/> 12.B <br/>"
+                    "answer": "11. A (like boat on teenager)<br/> 12.B (general public member)<br/> 13.C <br/> 14.B <br/> 15.C (exclude equipment and crew so exclude A B <br/> 16.A (could not manage them ex A and volunteer activities ex C) <br/ 17. E (ex casually care activity , deal rop and knot , one week residential course)<br/> 18.C <br/ 19.A <br/> 20.B(cold the month)"
                     
                     
                 },
@@ -533,6 +533,250 @@
                     "audio":"",
                     "link1":"",
                     "link2":"./assets/data/week9/writting.docx",
+                    "link3":"",
+                    "desc":"Writting",
+                    "content":"Writing....",
+                    "answer": ""
+                    
+                }
+                ,
+                {
+                    "id":4,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"https://us06web.zoom.us/rec/share/vdeFBW9zzo4_LzIms5ThIw-GFnQIrHP-0GSILRJy-dBgd_w67D1saLGE6Z3YjzJS.FCaG5ibd1ayJiTYG?fbclid=IwY2xjawJonPJleHRuA2FlbQIxMAABHqkXkNqROndpSCED_XkcnZRcb1o-yUETwEa__1x4qr-Y0EBSqRuKuhrGjqzT_aem_-Wst2FdvlLPmSNCsUD1GOg",
+                    "desc":"Speaking",
+                    "content":"Speaking....",
+                    "answer": ""
+                    
+                }
+                
+            ]
+        },
+        {
+            "id":10,
+            "name":"week10",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/week10/listening.png",
+                    "image1":"./assets/data/week10/listening1.png",
+                    "audio":"./assets/data/week10/listening.mp3",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Listening",
+                    "content":"Listening",
+                    "answer": "" 
+                    
+                    
+                },
+                {
+                    "id":2,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"./assets/data/week10/reading.pdf",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Reading",
+                    "content":"Reading....",
+                    "answer": ""
+                    
+                },
+                {
+                    "id":3,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"./assets/data/week10/writting.docx",
+                    "link3":"",
+                    "desc":"Writting",
+                    "content":"Writing....",
+                    "answer": ""
+                    
+                }
+                ,
+                {
+                    "id":4,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"https://us06web.zoom.us/rec/share/vdeFBW9zzo4_LzIms5ThIw-GFnQIrHP-0GSILRJy-dBgd_w67D1saLGE6Z3YjzJS.FCaG5ibd1ayJiTYG?fbclid=IwY2xjawJonPJleHRuA2FlbQIxMAABHqkXkNqROndpSCED_XkcnZRcb1o-yUETwEa__1x4qr-Y0EBSqRuKuhrGjqzT_aem_-Wst2FdvlLPmSNCsUD1GOg",
+                    "desc":"Speaking",
+                    "content":"Speaking....",
+                    "answer": ""
+                    
+                }
+                
+            ]
+        },
+        {
+            "id":11,
+            "name":"week11",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/week11/listening.png",
+                    "image1":"./assets/data/week11/listening1.png",
+                    "audio":"./assets/data/week11/listening.mp3",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Listening",
+                    "content":"Listening",
+                    "answer": "21. A (excluded plant science and dissertation module) <br/> 22. C (excluded laboratory and easily)<br/> 23. B(excluded aim and final grade) <br/> 24. C(quite hard to follow lot a theory) <br/> 25. B (details = thorough) <br/> 26. G (types and sizes . How many sources) <br/> 27 C(weight) <br/> 28. H (depth) <br/> 29.A (diff plant boxes) <br/> 30 E (how tall they grow)" 
+                    
+                    
+                },
+                {
+                    "id":2,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"./assets/data/week11/reading.pdf",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Reading",
+                    "content":"Reading....",
+                    "answer": ""
+                    
+                },
+                {
+                    "id":3,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"./assets/data/week11/writting.docx",
+                    "link3":"",
+                    "desc":"Writting",
+                    "content":"Writing....",
+                    "answer": ""
+                    
+                }
+                ,
+                {
+                    "id":4,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"https://us06web.zoom.us/rec/share/vdeFBW9zzo4_LzIms5ThIw-GFnQIrHP-0GSILRJy-dBgd_w67D1saLGE6Z3YjzJS.FCaG5ibd1ayJiTYG?fbclid=IwY2xjawJonPJleHRuA2FlbQIxMAABHqkXkNqROndpSCED_XkcnZRcb1o-yUETwEa__1x4qr-Y0EBSqRuKuhrGjqzT_aem_-Wst2FdvlLPmSNCsUD1GOg",
+                    "desc":"Speaking",
+                    "content":"Speaking....",
+                    "answer": ""
+                    
+                }
+                
+            ]
+        },
+        {
+            "id":12,
+            "name":"week12",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/week12/listening.png",
+                    "image1":"./assets/data/week12/listening1.png",
+                    "audio":"./assets/data/week12/listening.mp3",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Listening",
+                    "content":"Listening",
+                    "answer": "21. B (really hard to listen)<br/> 22. D (fun = learning through play)<br/> 23. D (distructed(tang dong) but origami calming)<br/> 24. A(make himself)<br/> 25.C(make the best bird=competitive)<br/> 26. G (increase the difficult level)<br/> 27.F (did not what going on)<br/> 28.A (stages = steps)<br/> 29. B (clunsy=no skills) 30. C(presentation fraction = introduction)" 
+                    
+                    
+                },
+                {
+                    "id":2,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"./assets/data/week12/reading.pdf",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Reading",
+                    "content":"Reading....",
+                    "answer": ""
+                    
+                },
+                {
+                    "id":3,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"./assets/data/week12/writting.docx",
+                    "link3":"",
+                    "desc":"Writting",
+                    "content":"Writing....",
+                    "answer": ""
+                    
+                }
+                ,
+                {
+                    "id":4,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"https://us06web.zoom.us/rec/share/vdeFBW9zzo4_LzIms5ThIw-GFnQIrHP-0GSILRJy-dBgd_w67D1saLGE6Z3YjzJS.FCaG5ibd1ayJiTYG?fbclid=IwY2xjawJonPJleHRuA2FlbQIxMAABHqkXkNqROndpSCED_XkcnZRcb1o-yUETwEa__1x4qr-Y0EBSqRuKuhrGjqzT_aem_-Wst2FdvlLPmSNCsUD1GOg",
+                    "desc":"Speaking",
+                    "content":"Speaking....",
+                    "answer": ""
+                    
+                }
+                
+            ]
+        },
+        {
+            "id":13,
+            "name":"week13",
+            "detail":[
+                {
+                    "id":1,
+                    "image":"./assets/data/week13/listening.png",
+                    "image1":"./assets/data/week13/listening1.png",
+                    "audio":"./assets/data/week13/listening.mp3",
+                    "link1":"",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Listening",
+                    "content":"Listening",
+                    "answer": "" 
+                    
+                    
+                },
+                {
+                    "id":2,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"./assets/data/week13/reading.pdf",
+                    "link2":"",
+                    "link3":"",
+                    "desc":"Reading",
+                    "content":"Reading....",
+                    "answer": ""
+                    
+                },
+                {
+                    "id":3,
+                    "image":"",
+                    "image1":"",
+                    "audio":"",
+                    "link1":"",
+                    "link2":"./assets/data/week13/writting.docx",
                     "link3":"",
                     "desc":"Writting",
                     "content":"Writing....",
