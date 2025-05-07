@@ -68,13 +68,7 @@ const skills = [
                 <div className="  font-bold text-green-500"><Link href={skill.link}>Demo</Link></div>
               </div>
               <div>
-                <div className="bg-gray-200 rounded-full h-3">
-                
-                  <div
-                    className="bg-blue-500 h-3 rounded-full"
-                    style={{ width: skill.level }}
-                  ></div>
-                </div>
+              
                 <p className="text-right text-sm text-gray-600 mt-2">
                   {skill.level} Proficiency
                 </p>
