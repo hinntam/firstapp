@@ -12,7 +12,7 @@ const Hero = () => (
             About me
             </h1>
             <span className="bg-gradient-to-r from-emerald-500 via-slate-500 to-indigo-700 bg-clip-text text-3xl tracking-tight text-transparent cursor-cell">
-            Software Developer / Web Dev / Mobile Dev
+            Web Developer / Mobile Dev / Devops
             </span>
             <p className="text-lg mt-4 text-neutral-300">
             Hello! I’m passionate developer based in Calgary, Canada, currently pursuing a Software Development Diploma at the Southern Alberta Institute of Technology (SAIT). I have gained valuable experience working on a variety of projects that span both backend and frontend technologies. My diverse skill set allows me to tackle challenges effectively and contribute to innovative solutions. I’m excited to continue growing my expertise and making an impact in the tech community.
@@ -45,9 +45,8 @@ const Hero = () => (
            
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8 sm:mt-8">
-          
-          <Image src="/assets/capcon.jpeg" alt="Hero Image" width={500} height={500} className="rounded-lg shadow-lg" ></Image>
+        <div className="w-full lg:w-1/2 lg:p-8 sm:mt-8 flex justify-center lg:justify-end">
+          <Image src="/john.jpeg" alt="Hero Image" width={300} height={300} className="rounded-lg shadow-lg" ></Image>
         </div>
         </div>
       </div>

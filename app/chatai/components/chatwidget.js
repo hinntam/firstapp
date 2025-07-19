@@ -50,10 +50,10 @@ export default function ChatWidget({OPENAI_API_KEY, OPENAI_URL}) {
     <div className="fixed bottom-4 right-4 w-80 rounded-xl shadow-lg border border-gray-200 bg-white">
       <div className="flex items-center justify-between px-4 py-2 border-b">
         <div className="flex items-center gap-2">
-          <Image src="/coder.webp" alt="Olivia" width={32} height={32} className="rounded-full" />
+          <Image src="/bot.webp" alt="John Nguyen" width={32} height={32} className="rounded-t-lg" />
           <span className="font-semibold text-gray-800">John Nguyen</span>
         </div>
-        <Image src="/coder.webp" alt="McDonald's" width={24} height={24} />
+       
       </div>
 
       <div className="p-4 max-h-60 overflow-y-auto space-y-2 text-sm">
@@ -83,7 +83,7 @@ export default function ChatWidget({OPENAI_API_KEY, OPENAI_URL}) {
       </div>
 
       <div className="text-xs text-center text-gray-400 p-1">
-        Powered by <a className="underline" href="#">John Nguyen</a>
+        Powered by <a className="underline" href="#">John Nguyen  </a>
       </div>
     </div>
   );

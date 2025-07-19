@@ -1,5 +1,5 @@
 "use client"
-import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +14,12 @@ const Header = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="/" className="text-lg font-bold">
-              <h1 className="text-slate-50 font-bold">
-                <span className="text-green-400">&lt;Hi </span>
-                <span className="text-blue-400">John Nguyen</span>
-                <span className="text-green-400">/&gt;</span>
+              <a href="/" className="flex items-center gap-2 text-lg font-bold">
+                <Image src="/bot.webp" alt="John Nguyen" width={32} height={32} className="rounded-t-lg" />
+                <h1 className="text-slate-50 font-bold">
+                  <span className="text-green-400">&lt;Hi </span>
+                  <span className="text-blue-400">John Nguyen</span>
+                  <span className="text-green-400">/&gt;</span>
                 </h1>
               </a>
             </div>
@@ -61,7 +62,7 @@ const Header = () => {
                 Skills
               </a>
               <a href="#projects" className="hover:text-gray-400">
-                Projects
+                My certificate
               </a>
               <a href="#contact" className="hover:text-gray-400">
                 Contact
@@ -84,7 +85,7 @@ const Header = () => {
                 href="#projects"
                 className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
               >
-                Projects
+                Certificates
               </a>
               <a
                 href="#contact"
