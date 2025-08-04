@@ -8,12 +8,11 @@ const Hero = () => (
         <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
-            <h1 className="text-5xl font-thin tracking-tight lg:mt-16 lg:text-2xl">
-            About me
-            </h1>
-            <span className="bg-gradient-to-r from-emerald-500 via-slate-500 to-indigo-700 bg-clip-text text-3xl tracking-tight text-transparent cursor-cell">
-            Web Developer / Mobile Dev / Devops
-            </span>
+            
+            
+            <div className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-xl lg:text-2xl font-semibold tracking-tight text-transparent text-center lg:text-left mt-8">
+             About Me
+            </div>
             <p className="text-lg mt-4 text-neutral-300">
             Hello! I’m passionate developer based in Calgary, Canada, currently pursuing a Software Development Diploma at the Southern Alberta Institute of Technology (SAIT). I have gained valuable experience working on a variety of projects that span both backend and frontend technologies. My diverse skill set allows me to tackle challenges effectively and contribute to innovative solutions. I’m excited to continue growing my expertise and making an impact in the tech community.
             </p>
