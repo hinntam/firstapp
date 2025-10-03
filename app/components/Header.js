@@ -42,8 +42,8 @@ const Header = () => {
               <a href="#contact" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
                 Contact
               </a>
-              <a href="#book-appointment" className="bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-600 hover:to-blue-700 px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-medium shadow-lg">
-                Book Appointment
+              <a href="/webstudio" className="bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-600 hover:to-blue-700 px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-medium shadow-lg">
+                Web Studio
               </a>
             </div>
 
