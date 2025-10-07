@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import VideoPlayer from "./Video";
+
 
 const Projects = () => {
   const featuredProjects = [
@@ -23,11 +23,11 @@ const Projects = () => {
       title: 'GPS Tracking & Data Transfer System',
       description: 'Real-time GPS tracking system with WebSocket data transfer capabilities. Enables live location monitoring, route optimization, and data analytics for fleet management.',
       longDescription: 'Enterprise-grade GPS tracking solution with real-time data streaming, geofencing, route optimization, and comprehensive analytics dashboard. Supports multiple vehicle tracking with WebSocket communication.',
-      technologies: ['Node.js', 'WebSocket', 'GPS API', 'PostgreSQL', 'React.js', 'Express.js', 'Redis', 'Docker'],
-      image: '/assets/project.jpeg',
-      demoLink: 'https://gps-tracking-demo.vercel.app',
+      technologies: ['ASP.NET', 'WebSocket', 'C#', 'SQL Server', 'Google Map API', 'HTML', 'JAVASCRIPT', 'Docker'],
+      image: '/web/gps.jpg',
+      demoLink: '',
       codeLink: 'https://github.com/johnnguyen/gps-tracking',
-      video: '/assets/introduce.mp4',
+      video: '/assets/albertadriving.mp4',
       category: 'Full Stack Development',
       status: 'Enterprise',
       highlights: ['Real-time WebSocket communication', 'Geofencing capabilities', 'Route optimization', 'Fleet management dashboard']
@@ -37,7 +37,7 @@ const Projects = () => {
       description: 'Advanced driver license preparation app with 600+ practice questions. Features smart learning algorithms, mistake tracking, and personalized study plans.',
       longDescription: 'Intelligent learning platform for Vietnamese driver license preparation featuring adaptive learning algorithms, spaced repetition, detailed analytics, and personalized study recommendations.',
       technologies: ['React Native CLI', 'Node.js', 'MongoDB', 'Express.js', 'Machine Learning', 'Kotlin', 'Redux'],
-      image: '/assets/movies.png',
+      image: '/web/gplx.webp',
       demoLink: 'https://play.google.com/store/apps/details?id=com.codewithnguyen.tododriver&hl=en',
       codeLink: 'https://github.com/johnnguyen/gplx-600',
       video: '/assets/gplx600.mp4',
@@ -61,14 +61,14 @@ const Projects = () => {
       highlights: ['Multiple API integration', 'Recommendation engine', 'Social features', 'Responsive design']
     },
     {
-      title: 'Green Food Cooking Guide',
+      title: 'Asia: Recipe & Meal Plans',
       description: 'Interactive cooking application with step-by-step instructions, ingredient management, and nutritional information. Features recipe search and meal planning.',
       longDescription: 'Comprehensive cooking companion app with recipe management, shopping lists, nutritional tracking, and social recipe sharing. Includes video tutorials and cooking timers.',
       technologies: ['React Native CLI', 'OpenAI API', 'Kotlin', 'Firebase', 'Nutrition API', 'Camera Integration'],
-      image: '/assets/movies.png',
+      image: '/web/howtocook.webp',
       demoLink: 'https://play.google.com/store/apps/details?id=com.codewithnguyen.todogreenfood&hl=en',
       codeLink: 'https://github.com/johnnguyen/green-food',
-      video: '/assets/howtocook.mp4',
+      video: '/assets/albertadriving.mp4',
       category: 'Mobile Development',
       status: 'Published',
       downloads: '2K+',
@@ -84,6 +84,32 @@ const Projects = () => {
       demoLink: 'https://parking-master-demo.vercel.app',
       codeLink: 'https://github.com/manminder11/CPRG-303-Project',
       video: '/assets/parkingmaster.mp4',
+      category: 'IoT & Smart City',
+      status: 'Demo',
+      highlights: ['Real-time availability', 'Payment integration', 'Smart notifications', 'Analytics dashboard']
+    },
+    {
+      title: 'Booking Master - Smart Booking Solution',
+      description: 'Intelligent booking management system with real-time availability tracking, reservation system, and payment integration. Uses Google Maps API for location services.',
+      longDescription: 'Complete booking management ecosystem with real-time spot detection, reservation system, payment processing, and analytics dashboard for booking operators.',
+      technologies: ['React Native', 'Google Maps API', 'Node.js', 'Express.js', 'PostgreSQL', 'Stripe API', 'Socket.io'],
+      image: '/web/booking.png',
+      demoLink: 'https://fireapp-59839.web.app/harvestnail.html',
+      codeLink: 'https://github.com/manminder11/CPRG-303-Project',
+      video: '/assets/bookingmaster.mp4',
+      category: 'IoT & Smart City',
+      status: 'Demo',
+      highlights: ['Real-time availability', 'Payment integration', 'Smart notifications', 'Analytics dashboard']
+    },
+    {
+      title: 'Payment integrated with WooCommerce and WordPress',
+      description: 'Integrated payment solutions for WooCommerce and WordPress.',
+      longDescription: 'Make simple for the customers.',
+      technologies: ['Wordpress', 'Stripe', 'WooCommerce'],
+      image: '/web/stripe.jpeg',
+      demoLink: 'https://stripe.com/',
+      codeLink: 'https://github.com/manminder11/CPRG-303-Project',
+      video: '/assets/bookingmaster.mp4',
       category: 'IoT & Smart City',
       status: 'Demo',
       highlights: ['Real-time availability', 'Payment integration', 'Smart notifications', 'Analytics dashboard']
@@ -146,18 +172,16 @@ const Projects = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {featuredProjects.map((project, index) => (
           <div key={index} className="group bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-800 hover:border-emerald-500/30 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
-            {/* Video/Image Section */}
-            <div className="relative h-48 lg:h-56 overflow-hidden">
-              {project.video ? (
-                <VideoPlayer link={project.video} />
-              ) : (
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              )}
+            {/* Image Section (Responsive) */}
+            <div className="relative w-full h-48 lg:h-56 overflow-hidden">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover group-hover:scale-110 transition-transform duration-300"
+                priority={index < 2}
+              />
               <div className="absolute top-4 left-4 flex gap-2">
                 <span className={`px-2 py-1 rounded-full text-xs font-medium border ${getCategoryColor(project.category)}`}>
                   {project.category}
