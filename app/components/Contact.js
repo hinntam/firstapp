@@ -91,7 +91,7 @@ const Contact = () => {
             </svg>
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-          <p className="text-gray-300">john.nguyen@example.com</p>
+          <p className="text-gray-300">mailtam62@gmail.com</p>
         </div>
 
         <div className="text-center bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800 hover:border-blue-500/30 transition-all duration-300">
@@ -112,7 +112,7 @@ const Contact = () => {
             </svg>
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">Location</h3>
-          <p className="text-gray-300">Calgary, Canada</p>
+          <p className="text-gray-300">96 Sandstone Dr NW Calgary, Canada</p>
         </div>
       </div>
 
