@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>John Nguyen - Full Stack Software Engineer | Calgary</title>
-        <meta name="description" content="Full Stack Software Engineer specializing in React, Node.js, AWS, and modern web technologies. Based in Calgary, Canada." />
-        <meta name="keywords" content="Full Stack Developer, Software Engineer, React, Node.js, AWS, Calgary, Web Development" />
+        <title>John Nguyen - SEO & Digital Marketing Specialist | Calgary</title>
+        <meta name="description" content="SEO and Digital Marketing Specialist in Calgary with experience in WordPress, technical SEO, Google Ads, GA4, GTM, and AI-assisted content optimization." />
+        <meta name="keywords" content="SEO Specialist, Digital Marketing, WordPress SEO, Google Ads, GA4, GTM, Technical SEO, Calgary" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

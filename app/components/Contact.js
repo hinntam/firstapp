@@ -22,14 +22,14 @@ const Contact = () => {
   });
 
   const services = [
-    "Full Stack Web Development",
-    "Mobile App Development",
-    "Cloud Infrastructure Setup",
-    "DevOps Consultation",
-    "GPS/Location Services",
-    "Technical Consultation",
-    "Code Review",
-    "System Architecture Design"
+    "Technical SEO Audit",
+    "On-Page SEO Optimization",
+    "Local SEO Strategy",
+    "Google Ads Search Campaign",
+    "Google Ads Display Campaign",
+    "GA4 and GTM Setup",
+    "AI-Assisted Content Optimization",
+    "WordPress Performance Improvement"
   ];
 
   const timeSlots = [
@@ -78,7 +78,7 @@ const Contact = () => {
           Get In <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Touch</span>
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-          Ready to bring your project to life? Let&apos;s discuss your requirements and explore how I can help you achieve your goals.
+          Looking to improve search visibility, paid traffic quality, and conversion performance? Let&apos;s discuss your current funnel and next growth priorities.
         </p>
       </div>
 
@@ -112,7 +112,7 @@ const Contact = () => {
             </svg>
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">Location</h3>
-          <p className="text-gray-300">96 Sandstone Dr NW Calgary, Canada</p>
+          <p className="text-gray-300">Calgary, AB, Canada</p>
         </div>
       </div>
 
@@ -209,7 +209,7 @@ const Contact = () => {
 
         {activeTab === "appointment" && (
           <div id="book-appointment" className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Book an Appointment</h3>
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Book a Strategy Call</h3>
             <form onSubmit={handleAppointmentSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

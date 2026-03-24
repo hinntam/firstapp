@@ -39,11 +39,14 @@ const Header = () => {
               <a href="#projects" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
                 Projects
               </a>
+              <a href="#activities" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
+                Experience
+              </a>
               <a href="#contact" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
                 Contact
               </a>
               <a href="/webstudio" className="bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-600 hover:to-blue-700 px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-medium shadow-lg">
-                Web Studio
+                Marketing Studio
               </a>
             </div>
 
@@ -113,6 +116,13 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Projects
+              </a>
+              <a
+                href="#activities"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800 hover:text-emerald-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Experience
               </a>
               <a
                 href="#contact"

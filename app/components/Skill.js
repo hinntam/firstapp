@@ -1,56 +1,53 @@
-import Image from "next/image";
-
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "SEO",
       skills: [
-        { name: "React.js", level: 95, color: "emerald", description: "Building modern, responsive web applications" },
-        { name: "TypeScript", level: 90, color: "blue", description: "Type-safe JavaScript development" },
-        { name: "Next.js", level: 88, color: "purple", description: "Full-stack React framework" },
-        { name: "Tailwind CSS", level: 92, color: "cyan", description: "Utility-first CSS framework" },
-        { name: "Redux", level: 85, color: "violet", description: "State management for React apps" }
+        { name: "Technical SEO", level: 95, color: "emerald", description: "Site structure, crawlability, indexing, and schema optimization" },
+        { name: "On-Page SEO", level: 93, color: "blue", description: "Titles, meta descriptions, keyword mapping, and content relevance" },
+        { name: "Off-Page SEO", level: 89, color: "purple", description: "Backlink audits and white-hat link building practices" },
+        { name: "Local SEO", level: 91, color: "cyan", description: "Local ranking optimization on Google and Bing" },
+        { name: "Core Web Vitals", level: 88, color: "violet", description: "Page speed and mobile-first performance improvements" }
       ]
     },
     {
-      title: "Backend Development",
+      title: "Tools",
       skills: [
-        { name: "Node.js", level: 93, color: "green", description: "Server-side JavaScript runtime" },
-        { name: "Express.js", level: 90, color: "gray", description: "Web application framework" },
-        { name: "Python", level: 87, color: "yellow", description: "Versatile programming language" },
-        { name: "Django", level: 82, color: "emerald", description: "Python web framework" },
-        { name: ".NET", level: 80, color: "purple", description: "Microsoft development platform" },
-        { name: "Java", level: 78, color: "orange", description: "Enterprise application development" }
+        { name: "WordPress", level: 92, color: "green", description: "Site management, content workflows, and structural optimization" },
+        { name: "Yoast SEO", level: 92, color: "gray", description: "On-page controls, metadata, and structured optimization workflow" },
+        { name: "Semrush", level: 89, color: "yellow", description: "Competitor research, keyword intelligence, and auditing" },
+        { name: "Ahrefs", level: 88, color: "emerald", description: "Backlink analysis and keyword gap discovery" },
+        { name: "Google Search Console", level: 91, color: "purple", description: "High-impression query analysis and indexing diagnostics" }
       ]
     },
     {
-      title: "Database & Storage",
+      title: "Ads & Analytics",
       skills: [
-        { name: "PostgreSQL", level: 88, color: "blue", description: "Advanced relational database" },
-        { name: "MongoDB", level: 85, color: "green", description: "NoSQL document database" },
-        { name: "MySQL", level: 83, color: "orange", description: "Popular relational database" },
-        { name: "Redis", level: 80, color: "red", description: "In-memory data structure store" },
-        { name: "Firebase", level: 85, color: "yellow", description: "Google's mobile platform" }
+        { name: "Google Ads Search", level: 92, color: "blue", description: "Campaign management for high-intent traffic" },
+        { name: "Google Ads Display", level: 87, color: "green", description: "Audience and placement strategy for reach and remarketing" },
+        { name: "GA4", level: 90, color: "orange", description: "Conversion measurement and performance reporting" },
+        { name: "Google Tag Manager", level: 89, color: "red", description: "Reliable event and conversion tracking setup" },
+        { name: "Remarketing", level: 88, color: "yellow", description: "Re-engagement strategy to improve ad spend efficiency" }
       ]
     },
     {
-      title: "Cloud & DevOps",
+      title: "AI & Automation",
       skills: [
-        { name: "AWS", level: 85, color: "orange", description: "Amazon Web Services - EC2, S3, RDS" },
-        { name: "Docker", level: 88, color: "blue", description: "Containerization platform" },
-        { name: "Kubernetes", level: 82, color: "cyan", description: "Container orchestration" },
-        { name: "Azure", level: 83, color: "blue", description: "Microsoft cloud platform" },
-        { name: "CI/CD", level: 85, color: "green", description: "GitHub Actions, Azure DevOps" }
+        { name: "ChatGPT", level: 91, color: "orange", description: "Drafting and optimization support for SEO content workflows" },
+        { name: "GenAI", level: 88, color: "blue", description: "AI-assisted keyword and content ideation" },
+        { name: "Copilot", level: 89, color: "cyan", description: "Workflow acceleration for technical tasks and automation" },
+        { name: "GA4 AI Insights", level: 86, color: "blue", description: "Insight generation for campaign and content improvements" },
+        { name: "Ads AI", level: 85, color: "green", description: "Optimization support for ad strategy and execution" }
       ]
     },
     {
-      title: "Specialized Skills",
+      title: "Web & Engineering Foundations",
       skills: [
-        { name: "GPS Systems", level: 90, color: "emerald", description: "Real-time location tracking & data transfer" },
-        { name: "WebSocket", level: 87, color: "purple", description: "Real-time bidirectional communication" },
-        { name: "REST APIs", level: 92, color: "blue", description: "RESTful web service design" },
-        { name: "JWT & OAuth2", level: 85, color: "red", description: "Authentication & authorization" },
-        { name: "Security", level: 83, color: "gray", description: "XSS/CSRF prevention, OWASP standards" }
+        { name: "HTML/CSS/JavaScript", level: 88, color: "emerald", description: "Practical implementation for web optimization tasks" },
+        { name: "WordPress Customization", level: 89, color: "purple", description: "Front-end and content structure improvements" },
+        { name: "Git", level: 90, color: "blue", description: "Version-controlled workflow and collaboration" },
+        { name: "GitHub", level: 90, color: "red", description: "Repository management and branch-based collaboration" },
+        { name: "UX Design Foundations", level: 86, color: "gray", description: "User-centered design decisions from SAIT training" }
       ]
     }
   ];
@@ -91,10 +88,10 @@ const Skills = () => {
     <section id="skills" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
       <div className="text-center mb-16">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Technical <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Skills</span>
+          Marketing & <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Technical Skills</span>
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-          Comprehensive expertise across the full development stack, from frontend frameworks to cloud infrastructure and specialized systems.
+          Practical capabilities across SEO, paid media, analytics, AI-assisted optimization, and software foundations that support measurable business growth.
         </p>
       </div>
 
@@ -134,9 +131,9 @@ const Skills = () => {
         <h3 className="text-2xl font-bold text-white mb-8">Additional Competencies</h3>
         <div className="flex flex-wrap justify-center gap-3">
           {[
-            "Agile/Scrum", "TDD/BDD", "Git/GitHub", "VS Code", "Eclipse", 
-            "Postman", "Jest", "JMeter", "WCAG 2.2", "SEO Optimization",
-            "React Native", "Mobile Development", "Progressive Web Apps"
+            "Site Architecture", "Internal Linking", "Mobile Usability", "Backlink Analysis", "Competitor Research",
+            "Schema Markup", "White-Hat SEO", "Keyword Optimization", "Conversion Tracking", "Performance Marketing",
+            "English - Fluent", "Vietnamese - Fluent"
           ].map((skill, index) => (
             <span key={index} className="px-4 py-2 bg-gray-800/50 text-gray-300 rounded-full text-sm border border-gray-700 hover:border-emerald-500/50 hover:text-emerald-400 transition-all duration-300">
               {skill}

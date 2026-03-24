@@ -5,114 +5,56 @@ import Link from "next/link";
 const Projects = () => {
   const featuredProjects = [
     {
-      title: 'Alberta Driving Class 7',
-      description: 'Comprehensive mobile application for Alberta Class 7 driving test preparation. Features interactive quizzes, practice tests, and detailed explanations. Built with React Native and full-stack backend.',
-      longDescription: 'A complete learning management system for driving test preparation featuring user authentication, progress tracking, quiz management, and real-time score analytics. Includes offline support and multi-language capabilities.',
-      technologies: ['React Native CLI', 'Node.js', 'MongoDB', 'Express.js', 'RESTful API', 'Kotlin', 'JWT Authentication'],
-      image: '/assets/albertadrivingtest.png',
-      demoLink: 'https://play.google.com/store/apps/details?id=com.codewithnguyen.todoalbertadriving&hl=en',
-      codeLink: 'https://github.com/johnnguyen/alberta-driving',
-      video: '/assets/albertadriving.mp4',
-      category: 'Mobile Development',
-      status: 'Published',
-      downloads: '1K+',
-      rating: 4.5,
-      highlights: ['Published on Google Play Store', 'Real-time quiz system', 'Offline functionality', 'Multi-language support']
-    },
-    {
-      title: 'GPS Tracking & Data Transfer System',
-      description: 'Real-time GPS tracking system with WebSocket data transfer capabilities. Enables live location monitoring, route optimization, and data analytics for fleet management.',
-      longDescription: 'Enterprise-grade GPS tracking solution with real-time data streaming, geofencing, route optimization, and comprehensive analytics dashboard. Supports multiple vehicle tracking with WebSocket communication.',
-      technologies: ['ASP.NET', 'WebSocket', 'C#', 'SQL Server', 'Google Map API', 'HTML', 'JAVASCRIPT', 'Docker'],
-      image: '/web/gps.jpg',
-      demoLink: '',
-      codeLink: 'https://github.com/johnnguyen/gps-tracking',
-      video: '/assets/albertadriving.mp4',
-      category: 'Full Stack Development',
-      status: 'Enterprise',
-      highlights: ['Real-time WebSocket communication', 'Geofencing capabilities', 'Route optimization', 'Fleet management dashboard']
-    },
-    {
-      title: '600 GPLX Driver License App',
-      description: 'Advanced driver license preparation app with 600+ practice questions. Features smart learning algorithms, mistake tracking, and personalized study plans.',
-      longDescription: 'Intelligent learning platform for Vietnamese driver license preparation featuring adaptive learning algorithms, spaced repetition, detailed analytics, and personalized study recommendations.',
-      technologies: ['React Native CLI', 'Node.js', 'MongoDB', 'Express.js', 'Machine Learning', 'Kotlin', 'Redux'],
-      image: '/web/gplx.webp',
-      demoLink: 'https://play.google.com/store/apps/details?id=com.codewithnguyen.tododriver&hl=en',
-      codeLink: 'https://github.com/johnnguyen/gplx-600',
-      video: '/assets/gplx600.mp4',
-      category: 'Mobile Development',
-      status: 'Published',
-      downloads: '5K+',
-      rating: 4.7,
-      highlights: ['AI-powered learning', '600+ questions database', 'Progress analytics', 'Offline study mode']
-    },
-    {
-      title: 'Movies Discovery Platform',
-      description: 'Modern movie discovery application with advanced search, personalized recommendations, and social features. Integrates multiple movie APIs for comprehensive data.',
-      longDescription: 'Full-featured movie discovery platform with user authentication, watchlists, reviews, ratings, and social sharing. Features advanced filtering, recommendation engine, and responsive design.',
-      technologies: ['Next.js', 'React.js', 'Tailwind CSS', 'Movie APIs', 'Prisma', 'PostgreSQL', 'Vercel'],
-      image: '/assets/movies.png',
-      demoLink: 'https://what-to-watch-blue.vercel.app/',
-      codeLink: 'https://github.com/johnnguyen/what-to-watch',
-      video: '/assets/whattowatch.mp4',
-      category: 'Web Development',
-      status: 'Live',
-      highlights: ['Multiple API integration', 'Recommendation engine', 'Social features', 'Responsive design']
-    },
-    {
-      title: 'Asia: Recipe & Meal Plans',
-      description: 'Interactive cooking application with step-by-step instructions, ingredient management, and nutritional information. Features recipe search and meal planning.',
-      longDescription: 'Comprehensive cooking companion app with recipe management, shopping lists, nutritional tracking, and social recipe sharing. Includes video tutorials and cooking timers.',
-      technologies: ['React Native CLI', 'OpenAI API', 'Kotlin', 'Firebase', 'Nutrition API', 'Camera Integration'],
-      image: '/web/howtocook.webp',
-      demoLink: 'https://play.google.com/store/apps/details?id=com.codewithnguyen.todogreenfood&hl=en',
-      codeLink: 'https://github.com/johnnguyen/green-food',
-      video: '/assets/albertadriving.mp4',
-      category: 'Mobile Development',
-      status: 'Published',
-      downloads: '2K+',
-      rating: 4.3,
-      highlights: ['AI recipe suggestions', 'Nutritional tracking', 'Shopping list generator', 'Video tutorials']
-    },
-    {
-      title: 'Parking Master - Smart Parking Solution',
-      description: 'Intelligent parking management system with real-time availability tracking, reservation system, and payment integration. Uses Google Maps API for location services.',
-      longDescription: 'Complete parking management ecosystem with real-time spot detection, reservation system, payment processing, and analytics dashboard for parking operators.',
-      technologies: ['React Native', 'Google Maps API', 'Node.js', 'Express.js', 'PostgreSQL', 'Stripe API', 'Socket.io'],
-      image: '/assets/parkingmaster.jpg',
-      demoLink: 'https://parking-master-demo.vercel.app',
-      codeLink: 'https://github.com/manminder11/CPRG-303-Project',
-      video: '/assets/parkingmaster.mp4',
-      category: 'IoT & Smart City',
-      status: 'Demo',
-      highlights: ['Real-time availability', 'Payment integration', 'Smart notifications', 'Analytics dashboard']
-    },
-    {
-      title: 'Booking Master - Smart Booking Solution',
-      description: 'Intelligent booking management system with real-time availability tracking, reservation system, and payment integration. Uses Google Maps API for location services.',
-      longDescription: 'Complete booking management ecosystem with real-time spot detection, reservation system, payment processing, and analytics dashboard for booking operators.',
-      technologies: ['React Native', 'Google Maps API', 'Node.js', 'Express.js', 'PostgreSQL', 'Stripe API', 'Socket.io'],
+      title: 'Local SEO Growth Program',
+      description: 'Executed a technical and on-page SEO program that improved crawl efficiency, strengthened indexing quality, and increased local search visibility.',
+      longDescription: 'Rebuilt site structure, optimized internal links and metadata, and prioritized high-impression pages from Search Console to lift CTR quality and inbound intent.',
+      technologies: ['Technical SEO', 'Google Search Console', 'Yoast SEO', 'Schema', 'Internal Linking', 'Keyword Optimization'],
       image: '/web/booking.png',
-      demoLink: 'https://fireapp-59839.web.app/harvestnail.html',
-      codeLink: 'https://github.com/manminder11/CPRG-303-Project',
+      demoLink: '/webstudio',
+      codeLink: 'https://www.linkedin.com/in/hijohnnguyen/',
       video: '/assets/bookingmaster.mp4',
-      category: 'IoT & Smart City',
-      status: 'Demo',
-      highlights: ['Real-time availability', 'Payment integration', 'Smart notifications', 'Analytics dashboard']
+      category: 'SEO Strategy',
+      status: 'Ongoing',
+      highlights: ['Reduced crawl friction through architecture cleanup', 'Improved SERP click quality with metadata refresh', 'Expanded local discovery for service keywords', 'Aligned content with high-intent search behavior']
     },
     {
-      title: 'Payment integrated with WooCommerce and WordPress',
-      description: 'Integrated payment solutions for WooCommerce and WordPress.',
-      longDescription: 'Make simple for the customers.',
-      technologies: ['Wordpress', 'Stripe', 'WooCommerce'],
+      title: 'Google Ads Search & Display Optimization',
+      description: 'Managed Search and Display campaigns with conversion-focused targeting, improving lead quality and budget efficiency.',
+      longDescription: 'Implemented campaign segmentation, refined keyword and audience structure, and used GA4 + GTM data to guide recurring ROI optimization decisions.',
+      technologies: ['Google Ads Search', 'Google Ads Display', 'GA4', 'Google Tag Manager', 'Remarketing', 'Conversion Tracking'],
       image: '/web/stripe.jpeg',
-      demoLink: 'https://stripe.com/',
-      codeLink: 'https://github.com/manminder11/CPRG-303-Project',
+      demoLink: '/webstudio',
+      codeLink: 'https://www.linkedin.com/in/hijohnnguyen/',
       video: '/assets/bookingmaster.mp4',
-      category: 'IoT & Smart City',
-      status: 'Demo',
-      highlights: ['Real-time availability', 'Payment integration', 'Smart notifications', 'Analytics dashboard']
+      category: 'Paid Media',
+      status: 'Active',
+      highlights: ['Improved targeting precision across two channels', 'Re-engaged high-intent users with remarketing', 'Lifted qualified lead potential', 'Improved spend allocation using tracked outcomes']
+    },
+    {
+      title: 'AI-Assisted SEO Content Optimization',
+      description: 'Implemented AI-supported content workflows to scale optimization cycles, keyword alignment, and user experience improvements.',
+      longDescription: 'Leveraged ChatGPT, GenAI, Copilot, GA4 AI Insights, Yoast AI, and Ads AI to increase optimization velocity while maintaining search-intent fit and quality controls.',
+      technologies: ['ChatGPT', 'GenAI', 'Copilot', 'GA4 AI Insights', 'Yoast AI', 'Ads AI'],
+      image: '/assets/movies.png',
+      demoLink: '/webstudio',
+      codeLink: 'https://github.com/hinntam',
+      video: '/assets/whattowatch.mp4',
+      category: 'AI Workflow',
+      status: 'Operational',
+      highlights: ['Scaled content optimization throughput', 'Improved keyword targeting consistency', 'Integrated AI into SEO workflow decisions', 'Protected content quality with repeatable checks']
+    },
+    {
+      title: 'SAIT Capstone Project - Mobile & Web Solution',
+      description: 'Collaborated in a 4-member team to analyze requirements, build a Python-based class solution, and validate functionality with unit tests.',
+      longDescription: 'Delivered capstone outcomes by combining requirement analysis, Visual Studio implementation, Git/GitHub collaboration, and disciplined test execution.',
+      technologies: ['Python', 'Visual Studio', 'Git', 'GitHub', 'Unit Testing', 'Team Collaboration'],
+      image: '/assets/albertadrivingtest.png',
+      demoLink: '/webstudio',
+      codeLink: 'https://github.com/hinntam',
+      video: '/assets/albertadriving.mp4',
+      category: 'Education Project',
+      status: 'Completed',
+      highlights: ['Analyzed and translated project requirements', 'Built Python-based deliverables', 'Executed branch and merge collaboration', 'Validated expected behavior with tests']
     }
   ];
 
@@ -121,7 +63,12 @@ const Projects = () => {
       'Published': 'bg-green-500/20 text-green-400 border-green-500/30',
       'Live': 'bg-blue-500/20 text-blue-400 border-blue-500/30',
       'Demo': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
-      'Enterprise': 'bg-orange-500/20 text-orange-400 border-orange-500/30'
+      'Enterprise': 'bg-orange-500/20 text-orange-400 border-orange-500/30',
+      'Ongoing': 'bg-green-500/20 text-green-400 border-green-500/30',
+      'Active': 'bg-blue-500/20 text-blue-400 border-blue-500/30',
+      'Operational': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
+      'Delivered': 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30',
+      'Completed': 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30'
     };
     return colors[status] || 'bg-gray-500/20 text-gray-400 border-gray-500/30';
   };
@@ -131,7 +78,12 @@ const Projects = () => {
       'Mobile Development': 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
       'Web Development': 'bg-blue-500/20 text-blue-400 border-blue-500/30',
       'Full Stack Development': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
-      'IoT & Smart City': 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30'
+      'IoT & Smart City': 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30',
+      'SEO Strategy': 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
+      'Paid Media': 'bg-orange-500/20 text-orange-400 border-orange-500/30',
+      'AI Workflow': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
+      'Web Performance': 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30',
+      'Education Project': 'bg-blue-500/20 text-blue-400 border-blue-500/30'
     };
     return colors[category] || 'bg-gray-500/20 text-gray-400 border-gray-500/30';
   };
@@ -140,11 +92,10 @@ const Projects = () => {
     <section id="projects" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
       <div className="text-center mb-16">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Featured <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Projects</span>
+          Featured <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Case Studies</span>
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-          A showcase of my recent work spanning mobile development, web applications, and enterprise solutions. 
-          Each project demonstrates different aspects of my technical expertise and problem-solving abilities.
+          Resume-aligned project highlights across SEO delivery, paid campaign optimization, AI workflows, and academic software collaboration.
         </p>
       </div>
 
@@ -155,16 +106,16 @@ const Projects = () => {
           <div className="text-gray-300 text-sm">Projects</div>
         </div>
         <div className="text-center bg-gray-900/50 backdrop-blur-sm rounded-xl p-4 border border-gray-800">
-          <div className="text-2xl lg:text-3xl font-bold text-blue-400 mb-1">8K+</div>
-          <div className="text-gray-300 text-sm">Downloads</div>
+          <div className="text-2xl lg:text-3xl font-bold text-blue-400 mb-1">2</div>
+          <div className="text-gray-300 text-sm">Markets</div>
         </div>
         <div className="text-center bg-gray-900/50 backdrop-blur-sm rounded-xl p-4 border border-gray-800">
-          <div className="text-2xl lg:text-3xl font-bold text-purple-400 mb-1">4</div>
-          <div className="text-gray-300 text-sm">Technologies</div>
+          <div className="text-2xl lg:text-3xl font-bold text-purple-400 mb-1">Search + Display</div>
+          <div className="text-gray-300 text-sm">Ads Channels</div>
         </div>
         <div className="text-center bg-gray-900/50 backdrop-blur-sm rounded-xl p-4 border border-gray-800">
-          <div className="text-2xl lg:text-3xl font-bold text-orange-400 mb-1">4.5★</div>
-          <div className="text-gray-300 text-sm">Avg Rating</div>
+          <div className="text-2xl lg:text-3xl font-bold text-orange-400 mb-1">GA4 + GTM</div>
+          <div className="text-gray-300 text-sm">Measurement Stack</div>
         </div>
       </div>
 
@@ -252,11 +203,9 @@ const Projects = () => {
               <div className="flex gap-3">
                 <Link
                   href={project.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="flex-1 bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-600 hover:to-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 text-center text-sm hover:scale-105"
                 >
-                  {project.status === 'Published' ? 'View on Store' : 'Live Demo'}
+                  View Case
                 </Link>
                 <Link
                   href={project.codeLink}
@@ -264,7 +213,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 text-center text-sm border border-gray-700 hover:border-emerald-500/50"
                 >
-                  View Code
+                  Learn More
                 </Link>
               </div>
             </div>
@@ -279,8 +228,7 @@ const Projects = () => {
             Interested in working together?
           </h3>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            I&apos;m always open to discussing new opportunities and exciting projects. 
-            Let&apos;s create something amazing together!
+            Let&apos;s align SEO, paid media, and analytics into one measurable growth roadmap for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -14,44 +14,46 @@ const Hero = () => (
                   John Nguyen
                 </h1>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-emerald-400 mb-6">
-                  Full Stack Software Engineer
+                  SEO & Digital Marketing Specialist
                 </h2>
                 <div className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-lg lg:text-xl font-semibold tracking-tight text-transparent">
-                  Calgary, Canada • SAIT Graduate • AWS Certified
+                  Marketing Growth Delivery Across Vietnam and Canada
                 </div>
               </div>
               
               {/* Key Technologies */}
               <div className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-base lg:text-lg font-semibold tracking-tight text-transparent text-center lg:text-left">
-                Node.js • React • TypeScript • AWS • Docker • Python • .NET • DevOps
+                WordPress • Technical SEO • Google Ads • GA4 • GTM • Semrush • Ahrefs • AI-Assisted Optimization
               </div>
               
               {/* Description */}
-              <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-300 max-w-2xl text-center lg:text-left">
-                Experienced Full Stack Developer with expertise in modern web technologies, cloud infrastructure, and real-time systems. 
-                AWS Certified Cloud Practitioner with proven experience in building scalable applications, GPS tracking systems, and 
-                implementing secure coding practices. Proficient in Agile methodologies and DevOps workflows.
-              </p>
+              <ul className="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-300 max-w-2xl text-center lg:text-left space-y-2 list-disc list-inside">
+                <li>Marketing specialist delivering measurable growth for businesses in Vietnam and Canada.</li>
+                <li>Strong background in WordPress development, technical SEO, and performance marketing.</li>
+                <li>Experienced in on-page/off-page SEO, site structure, internal linking, Core Web Vitals, mobile usability, and competitor research.</li>
+                <li>Proven ability to run Google Ads Search/Display, track conversions with GA4 + GTM, and execute remarketing to improve ROI.</li>
+                <li>Adept at using ChatGPT, GenAI, and Copilot to scale content optimization and enhance user experience.</li>
+              </ul>
 
               {/* Certifications */}
               <div className="w-full max-w-2xl">
                 <h3 className="text-emerald-400 font-semibold mb-3 text-center lg:text-left text-sm lg:text-base">Recent Certifications</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs lg:text-sm">
                   <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                    <div className="font-medium text-white">AWS Cloud Practitioner</div>
-                    <div className="text-gray-400">Nov 2024</div>
+                    <div className="font-medium text-white">Google Analytics Certification</div>
+                    <div className="text-gray-400">Dec 2025 - Dec 2026</div>
                   </div>
                   <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                    <div className="font-medium text-white">Google Search Certified</div>
-                    <div className="text-gray-400">May 2025</div>
+                    <div className="font-medium text-white">Google Ads Search Certification</div>
+                    <div className="text-gray-400">May 2025 - May 2026</div>
                   </div>
                   <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                    <div className="font-medium text-white">Technical SEO</div>
-                    <div className="text-gray-400">May 2024</div>
+                    <div className="font-medium text-white">Google Ads Display Certification</div>
+                    <div className="text-gray-400">Sep 2023 - Sep 2024</div>
                   </div>
                   <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                    <div className="font-medium text-white">Node.js Certified</div>
-                    <div className="text-gray-400">Nov 2023</div>
+                    <div className="font-medium text-white">SAIT Software Development Diploma</div>
+                    <div className="text-gray-400">Completed Apr 2025</div>
                   </div>
                 </div>
               </div>
@@ -60,16 +62,18 @@ const Hero = () => (
               <div className="w-full max-w-2xl">
                 <h3 className="text-emerald-400 font-semibold mb-3 text-center lg:text-left text-sm lg:text-base">Core Technologies</h3>
                 <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-                  <span className="px-2 lg:px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-xs lg:text-sm font-medium border border-emerald-500/30 hover:bg-emerald-500/30 transition-colors">React.js</span>
-                  <span className="px-2 lg:px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs lg:text-sm font-medium border border-blue-500/30 hover:bg-blue-500/30 transition-colors">Node.js</span>
-                  <span className="px-2 lg:px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30 hover:bg-purple-500/30 transition-colors">TypeScript</span>
-                  <span className="px-2 lg:px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-xs lg:text-sm font-medium border border-orange-500/30 hover:bg-orange-500/30 transition-colors">AWS</span>
-                  <span className="px-2 lg:px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-xs lg:text-sm font-medium border border-cyan-500/30 hover:bg-cyan-500/30 transition-colors">Docker</span>
-                  <span className="px-2 lg:px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-xs lg:text-sm font-medium border border-yellow-500/30 hover:bg-yellow-500/30 transition-colors">Python</span>
-                  <span className="px-2 lg:px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-xs lg:text-sm font-medium border border-green-500/30 hover:bg-green-500/30 transition-colors">MongoDB</span>
-                  <span className="px-2 lg:px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-xs lg:text-sm font-medium border border-red-500/30 hover:bg-red-500/30 transition-colors">PostgreSQL</span>
-                  <span className="px-2 lg:px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-xs lg:text-sm font-medium border border-indigo-500/30 hover:bg-indigo-500/30 transition-colors">Kubernetes</span>
-                  <span className="px-2 lg:px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30 hover:bg-pink-500/30 transition-colors">.NET</span>
+                  <span className="px-2 lg:px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-xs lg:text-sm font-medium border border-emerald-500/30 hover:bg-emerald-500/30 transition-colors">WordPress</span>
+                  <span className="px-2 lg:px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs lg:text-sm font-medium border border-blue-500/30 hover:bg-blue-500/30 transition-colors">Yoast SEO</span>
+                  <span className="px-2 lg:px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30 hover:bg-purple-500/30 transition-colors">Semrush</span>
+                  <span className="px-2 lg:px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-xs lg:text-sm font-medium border border-orange-500/30 hover:bg-orange-500/30 transition-colors">Ahrefs</span>
+                  <span className="px-2 lg:px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-xs lg:text-sm font-medium border border-cyan-500/30 hover:bg-cyan-500/30 transition-colors">Google Ads</span>
+                  <span className="px-2 lg:px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-xs lg:text-sm font-medium border border-yellow-500/30 hover:bg-yellow-500/30 transition-colors">GA4</span>
+                  <span className="px-2 lg:px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-xs lg:text-sm font-medium border border-green-500/30 hover:bg-green-500/30 transition-colors">Google Tag Manager</span>
+                  <span className="px-2 lg:px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-xs lg:text-sm font-medium border border-red-500/30 hover:bg-red-500/30 transition-colors">Core Web Vitals</span>
+                  <span className="px-2 lg:px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-xs lg:text-sm font-medium border border-indigo-500/30 hover:bg-indigo-500/30 transition-colors">Technical SEO</span>
+                  <span className="px-2 lg:px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30 hover:bg-pink-500/30 transition-colors">AI Content Ops</span>
+                  <span className="px-2 lg:px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-xs lg:text-sm font-medium border border-teal-500/30 hover:bg-teal-500/30 transition-colors">English - Fluent</span>
+                  <span className="px-2 lg:px-3 py-1 bg-lime-500/20 text-lime-400 rounded-full text-xs lg:text-sm font-medium border border-lime-500/30 hover:bg-lime-500/30 transition-colors">Vietnamese - Fluent</span>
                 </div>
               </div>
 
@@ -113,7 +117,7 @@ const Hero = () => (
               <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 rounded-2xl blur opacity-20 animate-pulse"></div>
               <Image 
                 src="/john.jpeg" 
-                alt="John Nguyen - Full Stack Software Engineer" 
+                alt="John Nguyen - SEO and Digital Marketing Specialist" 
                 width={280} 
                 height={280} 
                 className="relative rounded-2xl shadow-2xl border-4 border-gray-700 hover:border-emerald-400 transition-all duration-300 transform hover:scale-105 w-full max-w-xs lg:max-w-none"

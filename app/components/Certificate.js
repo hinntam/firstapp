@@ -3,71 +3,48 @@ import Image from "next/image";
 const Certificates = () => {
   const certificates = [
     {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "November 11, 2024",
-      credentialId: "AWS-CCP-2024-JN",
-      description: "Foundational understanding of AWS Cloud, services, and terminology. Demonstrates knowledge of AWS architectural principles and value proposition.",
-      image: "/assets/aws.png",
-      skills: ["Cloud Computing", "AWS Services", "Security", "Pricing Models"],
-      verificationLink: "https://aws.amazon.com/verification",
-      color: "orange"
-    },
-    {
-      title: "Google Search Certification",
+      title: "Google Analytics Certification",
       issuer: "Google",
-      date: "May 18, 2025",
-      credentialId: "GSC-2025-JN",
-      description: "Advanced understanding of search algorithms, SEO best practices, and search engine optimization techniques.",
+      date: "Dec 2025 - Dec 2026",
+      credentialId: "GA-CERT-2025",
+      description: "Validated competency in analytics strategy, event-driven measurement, reporting, and optimization through Google Analytics.",
       image: "/assets/nextjs.jpeg",
-      skills: ["SEO", "Search Algorithms", "Analytics", "Performance"],
-      verificationLink: "https://google.com/verification",
+      skills: ["GA4", "Event Tracking", "Attribution", "Performance Analysis"],
+      verificationLink: "https://skillshop.credential.net/",
       color: "blue"
     },
     {
-      title: "Technical SEO",
-      issuer: "LinkedIn Learning",
-      date: "May 8, 2024",
-      credentialId: "SEO-2024-JN",
-      description: "Comprehensive knowledge of technical SEO implementation, site optimization, and search engine best practices.",
+      title: "Google Ads Search Certification",
+      issuer: "Google",
+      date: "May 2025 - May 2026",
+      credentialId: "GADS-SEARCH-2025",
+      description: "Demonstrates applied capability in building and optimizing Google Search campaigns focused on qualified traffic and conversions.",
       image: "/assets/technicalseo.jpeg",
-      skills: ["Technical SEO", "Site Speed", "Schema Markup", "Core Web Vitals"],
-      verificationLink: "https://linkedin.com/learning/verification",
-      color: "green"
-    },
-    {
-      title: "Node.js Certification",
-      issuer: "Code with Mosh",
-      date: "November 11, 2023",
-      credentialId: "NODEJS-2023-JN",
-      description: "Advanced Node.js development skills including server-side programming, API development, and backend architecture.",
-      image: "/assets/nodejs.png",
-      skills: ["Node.js", "Express.js", "RESTful APIs", "Database Integration"],
-      verificationLink: "https://codewithmosh.com/verification",
+      skills: ["Search Campaigns", "Keyword Strategy", "Ad Copy", "Conversion Goals"],
+      verificationLink: "https://skillshop.credential.net/",
       color: "emerald"
     },
     {
-      title: "Learning Next.js",
-      issuer: "LinkedIn Learning",
-      date: "December 29, 2024",
-      credentialId: "NEXTJS-2024-JN",
-      description: "Modern React framework development including server-side rendering, static generation, and full-stack applications.",
-      image: "/assets/nextjs.jpeg",
-      skills: ["Next.js", "React", "SSR", "Static Generation"],
-      verificationLink: "https://linkedin.com/learning/verification",
-      color: "purple"
+      title: "Google Ads Display Certification",
+      issuer: "Google",
+      date: "Sep 2023 - Sep 2024",
+      credentialId: "GADS-DISPLAY-2023",
+      description: "Certified in display campaign fundamentals including audience strategy, placements, creative formats, and optimization.",
+      image: "/assets/aws.png",
+      skills: ["Display Ads", "Audience Segments", "Remarketing", "Campaign Optimization"],
+      verificationLink: "https://skillshop.credential.net/",
+      color: "orange"
     },
     {
-      title: "ISTQB Foundation Level",
-      issuer: "International Software Testing Qualifications Board",
-      date: "Coming Soon",
-      credentialId: "ISTQB-PENDING",
-      description: "Foundation level certification in software testing principles, techniques, and best practices.",
-      image: "/assets/istqb.png",
-      skills: ["Software Testing", "Test Planning", "Quality Assurance", "Bug Tracking"],
-      verificationLink: "#",
-      color: "cyan",
-      isPending: true
+      title: "Software Development Diploma",
+      issuer: "SAIT, Calgary",
+      date: "Completed Apr 2025",
+      credentialId: "GPA 3.83 / 4.00",
+      description: "Diploma foundation in software analysis, UX, databases, security, and full-stack development that strengthens technical marketing execution.",
+      image: "/assets/sait.jpg",
+      skills: ["Software Analysis", "Web Development", "UX", "Testing & Deployment"],
+      verificationLink: "https://www.sait.ca/",
+      color: "purple"
     }
   ];
 
@@ -102,18 +79,13 @@ const Certificates = () => {
           Professional <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Certifications</span>
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-          Industry-recognized certifications demonstrating expertise in cloud computing, web development, and technical optimization.
+          Credentials that validate practical expertise in analytics, paid media, and performance-focused digital execution.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {certificates.map((cert, index) => (
-          <div key={index} className={`relative group bg-gray-900/50 backdrop-blur-sm rounded-2xl border-2 ${getColorClasses(cert.color)} transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden ${cert.isPending ? 'opacity-80' : ''}`}>
-            {cert.isPending && (
-              <div className="absolute top-4 right-4 bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 px-2 py-1 rounded-full text-xs font-medium z-10">
-                Coming Soon
-              </div>
-            )}
+          <div key={index} className={`relative group bg-gray-900/50 backdrop-blur-sm rounded-2xl border-2 ${getColorClasses(cert.color)} transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden`}>
             
             <div className="relative h-48 overflow-hidden">
               <Image
@@ -154,18 +126,16 @@ const Certificates = () => {
                 </div>
               </div>
 
-              {!cert.isPending && (
-                <div className="flex gap-2">
-                  <a
-                    href={cert.verificationLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex-1 text-center py-2 px-4 rounded-lg border ${getBadgeColor(cert.color)} hover:opacity-80 transition-opacity text-sm font-medium`}
-                  >
-                    Verify Certificate
-                  </a>
-                </div>
-              )}
+              <div className="flex gap-2">
+                <a
+                  href={cert.verificationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex-1 text-center py-2 px-4 rounded-lg border ${getBadgeColor(cert.color)} hover:opacity-80 transition-opacity text-sm font-medium`}
+                >
+                  Verify Certificate
+                </a>
+              </div>
             </div>
           </div>
         ))}
@@ -174,15 +144,15 @@ const Certificates = () => {
       {/* Statistics */}
       <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-          <div className="text-3xl font-bold text-emerald-400 mb-2">{certificates.filter(c => !c.isPending).length}</div>
+          <div className="text-3xl font-bold text-emerald-400 mb-2">{certificates.length}</div>
           <div className="text-gray-300">Completed Certifications</div>
         </div>
         <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-          <div className="text-3xl font-bold text-blue-400 mb-2">5+</div>
+          <div className="text-3xl font-bold text-blue-400 mb-2">4</div>
           <div className="text-gray-300">Technology Domains</div>
         </div>
         <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-          <div className="text-3xl font-bold text-purple-400 mb-2">2024-2025</div>
+          <div className="text-3xl font-bold text-purple-400 mb-2">2023-2026</div>
           <div className="text-gray-300">Recent Achievements</div>
         </div>
       </div>

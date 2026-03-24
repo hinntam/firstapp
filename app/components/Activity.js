@@ -9,89 +9,110 @@ const Activity = () => {
   const activities = [
     {
       id: 1,
-      category: "education",
-      title: "SAIT Software Development Diploma - Capstone Project",
-      subtitle: "Sprout - AI-Powered Plant Care System",
-      description: "Led a team of 4 developers to create an innovative plant care application using React Native, Node.js, and machine learning for automated plant health monitoring and care recommendations.",
-      image: "/assets/capcon.jpeg",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity:7322417779213533185/",
-      date: "Dec 2024",
-      achievements: ["Team Lead", "Full-Stack Development", "AI Integration", "Mobile App"],
-      tech: ["React Native", "Node.js", "TensorFlow", "Firebase"],
-      status: "completed"
-    },
-    {
-      id: 2,
       category: "professional",
-      title: "Google Search Central Certificate",
-      subtitle: "Advanced SEO & Technical Implementation",
-      description: "Completed comprehensive certification covering technical SEO, site architecture, mobile optimization, and search engine best practices for enterprise applications.",
-      image: "/assets/technicalseo.jpeg",
-      link: "https://developers.google.com/search",
-      date: "Nov 2024",
-      achievements: ["Technical SEO Expert", "Performance Optimization", "Mobile-First Design"],
-      tech: ["SEO", "Web Performance", "Analytics", "Schema Markup"],
-      status: "certified"
-    },
-    {
-      id: 3,
-      category: "community",
-      title: "Open Source Contributor",
-      subtitle: "Alberta Driving Test & GPS Applications",
-      description: "Developed and maintain multiple open-source mobile applications serving the Alberta community, with over 8K+ combined downloads and active user engagement.",
-      image: "/assets/github.jpeg",
-      link: "https://github.com/hinntam",
-      date: "Ongoing",
-      achievements: ["8K+ Downloads", "Community Impact", "Open Source Maintainer"],
-      tech: ["React Native", "Expo", "JavaScript", "GitHub"],
+      title: "Web Manager - SEO & Digital Marketing",
+      subtitle: "Deluxe Nail Bar | Carrington, Calgary, AB | Present",
+      description: "Led end-to-end SEO and performance marketing execution to improve visibility, rankings, qualified leads, and ad efficiency.",
+      image: "/web/booking.png",
+      link: "https://www.linkedin.com/in/hijohnnguyen/",
+      date: "Present",
+      achievements: [
+        "Led end-to-end SEO strategy to improve search visibility and local rankings on Google and Bing",
+        "Reorganized WordPress architecture, internal linking, and URL structure for stronger crawlability and indexing",
+        "Optimized titles, meta descriptions, keywords, schema, images, and content using Yoast SEO and AI-assisted tools",
+        "Used Google Search Console query data to improve CTR and conversion-focused page targeting",
+        "Improved Core Web Vitals and page speed with mobile-first optimization",
+        "Managed Google Ads Search and Display campaigns with GA4 and GTM conversion tracking",
+        "Executed remarketing campaigns to re-engage high-intent users and improve ROI",
+        "Conducted Semrush and Ahrefs competitor audits and backlink analysis with white-hat implementation",
+        "Applied Google Search policy-compliant SEO practices and AI tools including ChatGPT, GA4 AI Insights, Yoast AI, and Ads AI"
+      ],
+      tech: ["WordPress", "Yoast SEO", "Google Ads", "GA4", "GTM", "Semrush", "Ahrefs"],
       status: "active"
     },
     {
-      id: 4,
-      category: "professional",
-      title: "AWS Cloud Practitioner",
-      subtitle: "Cloud Infrastructure & DevOps",
-      description: "Certified in AWS cloud services, infrastructure management, and deployment strategies. Specialized in serverless architecture and cost optimization.",
-      image: "/assets/aws.png",
-      link: "https://aws.amazon.com/certification/",
-      date: "Oct 2024",
-      achievements: ["Cloud Architecture", "Cost Optimization", "Security Best Practices"],
-      tech: ["AWS", "EC2", "S3", "Lambda", "CloudFormation"],
-      status: "certified"
-    },
-    {
-      id: 5,
+      id: 2,
       category: "education",
-      title: "Advanced Node.js Development",
-      subtitle: "Backend Architecture & Microservices",
-      description: "Completed intensive training in Node.js ecosystem, focusing on scalable backend architecture, microservices design, and API development for enterprise applications.",
-      image: "/assets/nodejs.png",
-      link: "#",
-      date: "Sep 2024",
-      achievements: ["Microservices Architecture", "API Design", "Database Optimization"],
-      tech: ["Node.js", "Express", "MongoDB", "Redis", "Docker"],
+      title: "Software Development Diploma",
+      subtitle: "Southern Alberta Institute of Technology (SAIT), Calgary, AB",
+      description: "GPA: 3.83 / 4.00 | Completed April 2025. Built a strong software engineering foundation that supports technical SEO and marketing execution.",
+      image: "/assets/sait.jpg",
+      link: "https://www.sait.ca/",
+      date: "Completed Apr 2025",
+      achievements: [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming",
+        "Web & Mobile Development",
+        "Software Testing & Deployment",
+        "Software Analysis & Design",
+        "Software Security",
+        "Database Programming",
+        "Computer Networks",
+        "User Experience (UX) & Design",
+        "Operating Systems"
+      ],
+      tech: ["Software Analysis", "Testing", "Security", "UX", "Databases"],
       status: "completed"
     },
     {
-      id: 6,
+      id: 3,
+      category: "professional",
+      title: "Google Certifications",
+      subtitle: "Analytics + Ads Credential Track",
+      description: "Maintained role-relevant Google certifications for analytics and paid media execution.",
+      image: "/assets/technicalseo.jpeg",
+      link: "https://skillshop.credential.net/",
+      date: "2023-2026",
+      achievements: [
+        "Google Analytics Certification | Dec 2025 - Dec 2026",
+        "Google Ads Search Certification | May 2025 - May 2026",
+        "Google Ads Display Certification | Sep 2023 - Sep 2024"
+      ],
+      tech: ["GA4", "Search Ads", "Display Ads", "Measurement"],
+      status: "certified"
+    },
+    {
+      id: 4,
+      category: "education",
+      title: "SAIT Capstone Project",
+      subtitle: "Mobile & Web Solution | Jan 2024 - Apr 2024",
+      description: "Collaborated with a 4-member team to analyze requirements, implement Python functionality, and validate against project expectations.",
+      image: "/assets/capcon.jpeg",
+      link: "https://github.com/",
+      date: "Jan 2024 - Apr 2024",
+      achievements: [
+        "Collaborated with a 4-member team to analyze requirements and develop a Python-based Book class",
+        "Implemented version control using Git and GitHub with branch and merge workflows",
+        "Developed and executed unit tests to validate functionality",
+        "Coordinated through scheduled meetings and Microsoft Teams"
+      ],
+      tech: ["Python", "Visual Studio", "Git", "GitHub", "Unit Testing"],
+      status: "completed"
+    },
+    {
+      id: 5,
       category: "community",
-      title: "Tech Mentorship Program",
-      subtitle: "Guiding New Developers",
-      description: "Actively mentoring junior developers and students transitioning into tech careers. Providing guidance on career development, technical skills, and industry best practices.",
-      image: "/assets/sait.jpg",
-      link: "#",
-      date: "Ongoing",
-      achievements: ["15+ Students Mentored", "Career Guidance", "Technical Training"],
-      tech: ["Teaching", "Career Development", "Code Review", "Best Practices"],
+      title: "Volunteer - Calgary Food Bank",
+      subtitle: "Calgary, AB | Apr 2024 - Present",
+      description: "Contributing to warehouse and event operations through reliable teamwork and safety-focused execution.",
+      image: "/assets/github.jpeg",
+      link: "https://www.calgaryfoodbank.com/",
+      date: "Apr 2024 - Present",
+      achievements: [
+        "Supported warehouse operations by sorting and organizing food donations",
+        "Participated in major events including Purolator Tackle Hunger and Quarry Park Co-op Stampede Breakfast",
+        "Followed safety procedures and collaborated effectively with team members"
+      ],
+      tech: ["Operations", "Coordination", "Safety Compliance"],
       status: "active"
     }
   ];
 
   const categories = [
-    { id: "all", name: "All Activities", icon: "🌟" },
-    { id: "education", name: "Education", icon: "🎓" },
-    { id: "professional", name: "Professional", icon: "💼" },
-    { id: "community", name: "Community", icon: "🤝" }
+    { id: "all", name: "All Activities", icon: "All" },
+    { id: "education", name: "Education", icon: "Edu" },
+    { id: "professional", name: "Professional", icon: "Work" },
+    { id: "community", name: "Community", icon: "Volunteer" }
   ];
 
   const filteredActivities = activeCategory === "all" 
@@ -123,7 +144,7 @@ const Activity = () => {
           Professional <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Activities</span>
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-          Showcasing my continuous learning journey, professional achievements, and contributions to the tech community.
+          A focused timeline of marketing experience, certifications, software education, and community contribution.
         </p>
       </div>
 
@@ -188,13 +209,13 @@ const Activity = () => {
             {/* Achievements */}
             <div className="mb-4">
               <h4 className="text-sm font-semibold text-gray-400 mb-2">Key Achievements:</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-col gap-2">
                 {activity.achievements.map((achievement, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-xs font-medium"
+                    className="px-3 py-2 bg-emerald-500/20 text-emerald-300 rounded-lg text-xs font-medium"
                   >
-                    {achievement}
+                    - {achievement}
                   </span>
                 ))}
               </div>
@@ -236,20 +257,20 @@ const Activity = () => {
       <div className="mt-16 pt-16 border-t border-gray-800">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-            <div className="text-3xl font-bold text-emerald-400 mb-2">6+</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-2">3</div>
             <div className="text-gray-300">Certifications</div>
           </div>
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-            <div className="text-3xl font-bold text-blue-400 mb-2">8K+</div>
-            <div className="text-gray-300">App Downloads</div>
+            <div className="text-3xl font-bold text-blue-400 mb-2">2</div>
+            <div className="text-gray-300">Primary Markets</div>
           </div>
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-            <div className="text-3xl font-bold text-purple-400 mb-2">15+</div>
-            <div className="text-gray-300">Students Mentored</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">4</div>
+            <div className="text-gray-300">Core Practice Areas</div>
           </div>
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-            <div className="text-3xl font-bold text-emerald-400 mb-2">24/7</div>
-            <div className="text-gray-300">Learning Mode</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-2">100%</div>
+            <div className="text-gray-300">White-Hat SEO Focus</div>
           </div>
         </div>
       </div>
