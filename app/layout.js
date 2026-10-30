@@ -13,8 +13,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "John's profile",
-  description: "Software developer - Web Dev",
+  title: "John Nguyen | IT Support & Help Desk",
+  description: "Calgary IT support candidate and SAIT Software Development diploma graduate with Windows troubleshooting, network diagnostics, and help desk documentation practice.",
 };
 
 export default function RootLayout({ children }) {

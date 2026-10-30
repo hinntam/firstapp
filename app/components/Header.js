@@ -1,148 +1,67 @@
 "use client"
-import Image from "next/image";
 import { useState } from "react";
 
-const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
-    };
-  
-    return (
-      <nav className="bg-gray-900/95 backdrop-blur-sm text-white fixed top-0 w-full z-50 shadow-lg border-b border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <a href="/" className="flex items-center gap-2 text-lg font-bold hover:opacity-80 transition-opacity">
-                <Image src="/bot.webp" alt="John Nguyen" width={32} height={32} className="rounded-lg" />
-                <h1 className="text-slate-50 font-bold">
-                  <span className="text-emerald-400">&lt;Hi </span>
-                  <span className="text-blue-400">John Nguyen</span>
-                  <span className="text-emerald-400">/&gt;</span>
-                </h1>
-              </a>
-            </div>
-  
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-6">
-              <a href="#home" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
-                Home
-              </a>
-              <a href="#skills" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
-                Skills
-              </a>
-              <a href="#certificates" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
-                Certificates
-              </a>
-              <a href="#projects" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
-                Projects
-              </a>
-              <a href="#activities" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
-                Experience
-              </a>
-              <a href="#contact" className="hover:text-emerald-400 transition-colors duration-300 font-medium py-2">
-                Contact
-              </a>
-              <a href="/webstudio" className="bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-600 hover:to-blue-700 px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-medium shadow-lg">
-                Marketing Studio
-              </a>
-            </div>
+const navigation = [
+  { href: "#projects", label: "Projects" },
+  { href: "#skills", label: "IT support skills" },
+  { href: "#activities", label: "Experience" },
+  { href: "#contact", label: "Contact" }
+];
 
-            {/* Hamburger Icon */}
-            <div className="md:hidden">
-              <button
-                onClick={toggleMenu}
-                className="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-md p-2"
-                aria-label="Toggle menu"
-              >
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  {isOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  )}
-                </svg>
-              </button>
-            </div>
-          </div>
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav aria-label="Main navigation" className="fixed top-0 z-50 w-full border-b border-slate-800/80 bg-slate-950/90 text-white shadow-lg shadow-black/10 backdrop-blur-xl">
+      <div className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <a href="#home" className="group flex items-center gap-3" onClick={() => setIsOpen(false)}>
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-400 font-mono text-sm font-bold text-slate-950">JN</span>
+          <span className="font-semibold tracking-tight text-white group-hover:text-emerald-300">John Nguyen</span>
+        </a>
+
+        <div className="hidden items-center gap-7 md:flex">
+          {navigation.map((item) => (
+            <a key={item.href} href={item.href} className="text-sm font-medium text-slate-300 transition hover:text-emerald-300">
+              {item.label}
+            </a>
+          ))}
+          <a href="/IT-Resume.pdf" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-emerald-400/40 px-4 py-2 text-sm font-semibold text-emerald-300 transition hover:border-emerald-300 hover:bg-emerald-400/10">
+            Resume ↗
+          </a>
         </div>
-  
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden bg-gray-900/95 backdrop-blur-sm border-t border-gray-800">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <a
-                href="#home"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800 hover:text-emerald-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </a>
-              <a
-                href="#skills"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800 hover:text-emerald-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Skills
-              </a>
-              <a
-                href="#certificates"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800 hover:text-emerald-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Certificates
-              </a>
-              <a
-                href="#projects"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800 hover:text-emerald-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Projects
-              </a>
-              <a
-                href="#activities"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800 hover:text-emerald-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Experience
-              </a>
-              <a
-                href="#contact"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800 hover:text-emerald-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </a>
-              <a
-                href="#book-appointment"
-                className="block mx-3 mt-2 bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-600 hover:to-blue-700 px-4 py-2 rounded-full text-center font-medium transition-all duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                Book Appointment
-              </a>
-            </div>
-          </div>
-        )}
-      </nav>
-    );
-  };
-  
-  export default Header;
+
+        <button
+          type="button"
+          onClick={() => setIsOpen((open) => !open)}
+          className="rounded-lg p-2 text-slate-300 transition hover:bg-slate-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 md:hidden"
+          aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
+        >
+          <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            {isOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+      </div>
+
+      {isOpen && (
+        <div id="mobile-navigation" className="border-t border-slate-800 bg-slate-950 px-4 pb-4 pt-2 md:hidden">
+          {navigation.map((item) => (
+            <a key={item.href} href={item.href} onClick={() => setIsOpen(false)} className="block rounded-lg px-3 py-3 text-sm font-medium text-slate-300 transition hover:bg-slate-900 hover:text-emerald-300">
+              {item.label}
+            </a>
+          ))}
+          <a href="/IT-Resume.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="mt-2 block rounded-lg bg-emerald-400 px-3 py-3 text-center text-sm font-semibold text-slate-950">
+            View resume
+          </a>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Header;

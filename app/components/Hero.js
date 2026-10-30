@@ -1,134 +1,85 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const Hero = () => (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-      <div className="border-b border-neutral-800 pb-16 lg:pb-20">
-        <div className="flex flex-wrap lg:flex-nowrap items-center gap-8 lg:gap-16">
-          {/* Left Content */}
-          <div className="w-full lg:w-3/5 order-2 lg:order-1">
-            <div className="flex flex-col items-center lg:items-start space-y-6 lg:space-y-8">
-              {/* Header */}
-              <div className="text-center lg:text-left">
-                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white mb-4 animate-pulse">
-                  John Nguyen
-                </h1>
-                <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-emerald-400 mb-6">
-                  SEO & Digital Marketing Specialist
-                </h2>
-                <div className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-lg lg:text-xl font-semibold tracking-tight text-transparent">
-                  Marketing Growth Delivery Across Vietnam and Canada
-                </div>
-              </div>
-              
-              {/* Key Technologies */}
-              <div className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-base lg:text-lg font-semibold tracking-tight text-transparent text-center lg:text-left">
-                WordPress • Technical SEO • Google Ads • GA4 • GTM • Semrush • Ahrefs • AI-Assisted Optimization
-              </div>
-              
-              {/* Description */}
-              <ul className="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-300 max-w-2xl text-center lg:text-left space-y-2 list-disc list-inside">
-                <li>Marketing specialist delivering measurable growth for businesses in Vietnam and Canada.</li>
-                <li>Strong background in WordPress development, technical SEO, and performance marketing.</li>
-                <li>Experienced in on-page/off-page SEO, site structure, internal linking, Core Web Vitals, mobile usability, and competitor research.</li>
-                <li>Proven ability to run Google Ads Search/Display, track conversions with GA4 + GTM, and execute remarketing to improve ROI.</li>
-                <li>Adept at using ChatGPT, GenAI, and Copilot to scale content optimization and enhance user experience.</li>
-              </ul>
+  <section className="relative mx-auto max-w-7xl overflow-hidden px-4 pb-20 pt-24 sm:px-6 lg:px-8 lg:pb-28 lg:pt-32">
+    <div className="pointer-events-none absolute -right-32 top-12 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl" />
+    <div className="pointer-events-none absolute left-1/3 top-24 h-64 w-64 rounded-full bg-cyan-500/10 blur-3xl" />
 
-              {/* Certifications */}
-              <div className="w-full max-w-2xl">
-                <h3 className="text-emerald-400 font-semibold mb-3 text-center lg:text-left text-sm lg:text-base">Recent Certifications</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs lg:text-sm">
-                  <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                    <div className="font-medium text-white">Google Analytics Certification</div>
-                    <div className="text-gray-400">Dec 2025 - Dec 2026</div>
-                  </div>
-                  <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                    <div className="font-medium text-white">Google Ads Search Certification</div>
-                    <div className="text-gray-400">May 2025 - May 2026</div>
-                  </div>
-                  <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                    <div className="font-medium text-white">Google Ads Display Certification</div>
-                    <div className="text-gray-400">Sep 2023 - Sep 2024</div>
-                  </div>
-                  <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                    <div className="font-medium text-white">SAIT Software Development Diploma</div>
-                    <div className="text-gray-400">Completed Apr 2025</div>
-                  </div>
-                </div>
-              </div>
+    <div className="relative grid items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
+      <div>
+        <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-300">
+          <span className="h-2 w-2 rounded-full bg-emerald-400" />
+          Calgary, Alberta <span className="text-emerald-500">/</span> Open to IT support roles
+        </div>
 
-              {/* Tech Stack Pills */}
-              <div className="w-full max-w-2xl">
-                <h3 className="text-emerald-400 font-semibold mb-3 text-center lg:text-left text-sm lg:text-base">Core Technologies</h3>
-                <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-                  <span className="px-2 lg:px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-xs lg:text-sm font-medium border border-emerald-500/30 hover:bg-emerald-500/30 transition-colors">WordPress</span>
-                  <span className="px-2 lg:px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs lg:text-sm font-medium border border-blue-500/30 hover:bg-blue-500/30 transition-colors">Yoast SEO</span>
-                  <span className="px-2 lg:px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30 hover:bg-purple-500/30 transition-colors">Semrush</span>
-                  <span className="px-2 lg:px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-xs lg:text-sm font-medium border border-orange-500/30 hover:bg-orange-500/30 transition-colors">Ahrefs</span>
-                  <span className="px-2 lg:px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-xs lg:text-sm font-medium border border-cyan-500/30 hover:bg-cyan-500/30 transition-colors">Google Ads</span>
-                  <span className="px-2 lg:px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-xs lg:text-sm font-medium border border-yellow-500/30 hover:bg-yellow-500/30 transition-colors">GA4</span>
-                  <span className="px-2 lg:px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-xs lg:text-sm font-medium border border-green-500/30 hover:bg-green-500/30 transition-colors">Google Tag Manager</span>
-                  <span className="px-2 lg:px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-xs lg:text-sm font-medium border border-red-500/30 hover:bg-red-500/30 transition-colors">Core Web Vitals</span>
-                  <span className="px-2 lg:px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-xs lg:text-sm font-medium border border-indigo-500/30 hover:bg-indigo-500/30 transition-colors">Technical SEO</span>
-                  <span className="px-2 lg:px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30 hover:bg-pink-500/30 transition-colors">AI Content Ops</span>
-                  <span className="px-2 lg:px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-xs lg:text-sm font-medium border border-teal-500/30 hover:bg-teal-500/30 transition-colors">English - Fluent</span>
-                  <span className="px-2 lg:px-3 py-1 bg-lime-500/20 text-lime-400 rounded-full text-xs lg:text-sm font-medium border border-lime-500/30 hover:bg-lime-500/30 transition-colors">Vietnamese - Fluent</span>
-                </div>
-              </div>
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">
+          IT support · Troubleshooting · Project delivery
+        </p>
+        <h1 className="max-w-3xl text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+          John <span className="text-emerald-400">Nguyen</span>
+        </h1>
+        <h2 className="mt-5 text-2xl font-semibold text-slate-200 sm:text-3xl">
+          I solve technical problems and make technology easier to use.
+        </h2>
+        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
+          SAIT Software Development graduate with deployed projects I build and maintain, a structured approach to Windows and network troubleshooting, and a focus on patient, clear end-user support.
+        </p>
 
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
-                <Link href="./assets/resume/resume.pdf" 
-                      className="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-600 hover:to-blue-700 text-white font-semibold px-6 lg:px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2">
-                  <span>Download Resume</span>
-                  <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="text-lg lg:text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm-1 8V6h2v4h3l-4 4-4-4h3zm6 7H7v-2h10v2z"></path>
-                  </svg>
-                </Link>
-                
-                <div className="flex space-x-4">
-                  <Link href="https://www.linkedin.com/in/hijohnnguyen/" className="group" aria-label="LinkedIn Profile">
-                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" className="text-3xl lg:text-4xl text-gray-400 hover:text-blue-500 transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
-                    </svg>
-                  </Link>   
-                  
-                  <Link href="https://github.com/hinntam" className="group" aria-label="GitHub Profile">
-                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 496 512" className="text-3xl lg:text-4xl text-gray-400 hover:text-purple-500 transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
-                    </svg>
-                  </Link>
-                  
-                  <Link href="mailto:mailtam62@gmail.com" className="group" aria-label="Email Contact">
-                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" role="img" viewBox="0 0 24 24" className="text-3xl lg:text-4xl text-gray-400 hover:text-emerald-500 transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path>
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <a
+            href="/IT-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-xl bg-emerald-400 px-6 py-3.5 font-semibold text-slate-950 transition hover:bg-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300"
+          >
+            View my resume <span className="ml-2" aria-hidden="true">↗</span>
+          </a>
+          <a
+            href="#projects"
+            className="inline-flex items-center justify-center rounded-xl border border-slate-700 bg-slate-900/70 px-6 py-3.5 font-semibold text-white transition hover:border-slate-500 hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300"
+          >
+            Explore my projects
+          </a>
+        </div>
 
-          {/* Right Image */}
-          <div className="w-full lg:w-2/5 order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 rounded-2xl blur opacity-20 animate-pulse"></div>
-              <Image 
-                src="/john.jpeg" 
-                alt="John Nguyen - SEO and Digital Marketing Specialist" 
-                width={280} 
-                height={280} 
-                className="relative rounded-2xl shadow-2xl border-4 border-gray-700 hover:border-emerald-400 transition-all duration-300 transform hover:scale-105 w-full max-w-xs lg:max-w-none"
-                priority
-              />
-            </div>
-          </div>
+        <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400">
+          <a className="transition hover:text-emerald-300" href="mailto:mailtam62@gmail.com">mailtam62@gmail.com</a>
+          <a className="transition hover:text-emerald-300" href="https://www.linkedin.com/in/hijohnnguyen/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a className="transition hover:text-emerald-300" href="https://github.com/hinntam" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
-      
-    </section>
-  );
-  
-  export default Hero;
+
+      <div className="relative mx-auto w-full max-w-md lg:ml-auto">
+        <div className="absolute -inset-3 rotate-3 rounded-[2rem] border border-emerald-400/20 bg-emerald-400/5" />
+        <div className="relative overflow-hidden rounded-[1.75rem] border border-slate-700 bg-slate-900 shadow-2xl shadow-black/30">
+          <Image
+            src="/john.jpeg"
+            alt="John Nguyen"
+            width={560}
+            height={560}
+            priority
+            className="aspect-square w-full object-cover"
+          />
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/85 to-transparent px-6 pb-6 pt-20">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">A practical, user-first approach</p>
+            <p className="mt-2 text-xl font-semibold text-white">Listen. Troubleshoot. Verify. Document.</p>
+          </div>
+        </div>
+        <div className="relative mt-5 grid grid-cols-3 gap-3">
+          {[
+            ["01", "User support"],
+            ["02", "Networking"],
+            ["03", "Secure access"]
+          ].map(([number, label]) => (
+            <div key={number} className="rounded-xl border border-slate-800 bg-slate-900/80 p-3 text-center">
+              <span className="block text-xs font-semibold tracking-widest text-emerald-400">{number}</span>
+              <span className="mt-1 block text-xs text-slate-300 sm:text-sm">{label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+export default Hero;

@@ -1,148 +1,81 @@
-const Skills = () => {
-  const skillCategories = [
-    {
-      title: "SEO",
-      skills: [
-        { name: "Technical SEO", level: 95, color: "emerald", description: "Site structure, crawlability, indexing, and schema optimization" },
-        { name: "On-Page SEO", level: 93, color: "blue", description: "Titles, meta descriptions, keyword mapping, and content relevance" },
-        { name: "Off-Page SEO", level: 89, color: "purple", description: "Backlink audits and white-hat link building practices" },
-        { name: "Local SEO", level: 91, color: "cyan", description: "Local ranking optimization on Google and Bing" },
-        { name: "Core Web Vitals", level: 88, color: "violet", description: "Page speed and mobile-first performance improvements" }
-      ]
-    },
-    {
-      title: "Tools",
-      skills: [
-        { name: "WordPress", level: 92, color: "green", description: "Site management, content workflows, and structural optimization" },
-        { name: "Yoast SEO", level: 92, color: "gray", description: "On-page controls, metadata, and structured optimization workflow" },
-        { name: "Semrush", level: 89, color: "yellow", description: "Competitor research, keyword intelligence, and auditing" },
-        { name: "Ahrefs", level: 88, color: "emerald", description: "Backlink analysis and keyword gap discovery" },
-        { name: "Google Search Console", level: 91, color: "purple", description: "High-impression query analysis and indexing diagnostics" }
-      ]
-    },
-    {
-      title: "Ads & Analytics",
-      skills: [
-        { name: "Google Ads Search", level: 92, color: "blue", description: "Campaign management for high-intent traffic" },
-        { name: "Google Ads Display", level: 87, color: "green", description: "Audience and placement strategy for reach and remarketing" },
-        { name: "GA4", level: 90, color: "orange", description: "Conversion measurement and performance reporting" },
-        { name: "Google Tag Manager", level: 89, color: "red", description: "Reliable event and conversion tracking setup" },
-        { name: "Remarketing", level: 88, color: "yellow", description: "Re-engagement strategy to improve ad spend efficiency" }
-      ]
-    },
-    {
-      title: "AI & Automation",
-      skills: [
-        { name: "ChatGPT", level: 91, color: "orange", description: "Drafting and optimization support for SEO content workflows" },
-        { name: "GenAI", level: 88, color: "blue", description: "AI-assisted keyword and content ideation" },
-        { name: "Copilot", level: 89, color: "cyan", description: "Workflow acceleration for technical tasks and automation" },
-        { name: "GA4 AI Insights", level: 86, color: "blue", description: "Insight generation for campaign and content improvements" },
-        { name: "Ads AI", level: 85, color: "green", description: "Optimization support for ad strategy and execution" }
-      ]
-    },
-    {
-      title: "Web & Engineering Foundations",
-      skills: [
-        { name: "HTML/CSS/JavaScript", level: 88, color: "emerald", description: "Practical implementation for web optimization tasks" },
-        { name: "WordPress Customization", level: 89, color: "purple", description: "Front-end and content structure improvements" },
-        { name: "Git", level: 90, color: "blue", description: "Version-controlled workflow and collaboration" },
-        { name: "GitHub", level: 90, color: "red", description: "Repository management and branch-based collaboration" },
-        { name: "UX Design Foundations", level: 86, color: "gray", description: "User-centered design decisions from SAIT training" }
-      ]
-    }
-  ];
+const skillGroups = [
+  {
+    number: "01",
+    title: "End-user support",
+    description: "Patient, structured troubleshooting that keeps the user informed.",
+    items: ["Gather symptoms and impact", "Isolate and test likely causes", "Explain steps in plain language", "Verify the fix or escalate"]
+  },
+  {
+    number: "02",
+    title: "Networking",
+    description: "Foundational connectivity diagnostics using common Windows tools.",
+    items: ["IP configuration: ipconfig", "Reachability: ping", "Name resolution: nslookup", "Route tracing: tracert"]
+  },
+  {
+    number: "03",
+    title: "Systems & hardware",
+    description: "Core support knowledge for everyday endpoint and application issues.",
+    items: ["Windows and operating-system fundamentals", "Basic hardware and peripheral troubleshooting", "Application setup and issue isolation", "Clear notes for follow-up"]
+  },
+  {
+    number: "04",
+    title: "Accounts & access",
+    description: "Understanding how identity and permissions affect access to systems.",
+    items: ["Authentication verifies identity", "Authorization determines permitted access", "Basic account-access troubleshooting", "Security-aware handling of user information"]
+  },
+  {
+    number: "05",
+    title: "Security mindset",
+    description: "Careful support practices that help protect users and their information.",
+    items: ["Privacy and sensitive-data awareness", "Least-privilege fundamentals", "Recognize suspicious activity and escalate", "Document actions and outcomes"]
+  },
+  {
+    number: "06",
+    title: "Technical foundation",
+    description: "Software development training strengthens my diagnostic and learning skills.",
+    items: ["SAIT Software Development diploma", "Computer networks and operating systems", "Software security and testing", "Git, GitHub and technical documentation"]
+  }
+];
 
-  const getColorClasses = (color, level) => {
-    const colors = {
-      emerald: `bg-emerald-500/20 text-emerald-400 border-emerald-500/30`,
-      blue: `bg-blue-500/20 text-blue-400 border-blue-500/30`,
-      purple: `bg-purple-500/20 text-purple-400 border-purple-500/30`,
-      cyan: `bg-cyan-500/20 text-cyan-400 border-cyan-500/30`,
-      violet: `bg-violet-500/20 text-violet-400 border-violet-500/30`,
-      green: `bg-green-500/20 text-green-400 border-green-500/30`,
-      gray: `bg-gray-500/20 text-gray-400 border-gray-500/30`,
-      yellow: `bg-yellow-500/20 text-yellow-400 border-yellow-500/30`,
-      orange: `bg-orange-500/20 text-orange-400 border-orange-500/30`,
-      red: `bg-red-500/20 text-red-400 border-red-500/30`
-    };
-    return colors[color] || colors.blue;
-  };
-
-  const getProgressColor = (color) => {
-    const colors = {
-      emerald: 'bg-emerald-500',
-      blue: 'bg-blue-500',
-      purple: 'bg-purple-500',
-      cyan: 'bg-cyan-500',
-      violet: 'bg-violet-500',
-      green: 'bg-green-500',
-      gray: 'bg-gray-500',
-      yellow: 'bg-yellow-500',
-      orange: 'bg-orange-500',
-      red: 'bg-red-500'
-    };
-    return colors[color] || 'bg-blue-500';
-  };
-
-  return (
-    <section id="skills" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Marketing & <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Technical Skills</span>
+const Skills = () => (
+  <section id="skills" className="scroll-mt-24">
+    <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+      <div className="mx-auto mb-12 max-w-3xl text-center">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-emerald-400">What I can bring to a support team</p>
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          IT support skills with a <span className="text-slate-400">builder&apos;s mindset.</span>
         </h2>
-        <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-          Practical capabilities across SEO, paid media, analytics, AI-assisted optimization, and software foundations that support measurable business growth.
+        <p className="mt-5 text-base leading-7 text-slate-400 sm:text-lg">
+          A practical foundation for entry-level support: systematic troubleshooting, responsible access practices, and communication that helps people move forward.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-        {skillCategories.map((category, categoryIndex) => (
-          <div key={categoryIndex} className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800 hover:border-emerald-500/30 transition-all duration-300">
-            <h3 className="text-xl font-bold text-emerald-400 mb-6 text-center">
-              {category.title}
-            </h3>
-            <div className="space-y-4">
-              {category.skills.map((skill, skillIndex) => (
-                <div key={skillIndex} className="group">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className={`px-3 py-1 rounded-full text-sm font-medium border ${getColorClasses(skill.color)} group-hover:scale-105 transition-transform`}>
-                      {skill.name}
-                    </span>
-                    <span className="text-gray-400 text-sm font-medium">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
-                    <div 
-                      className={`h-full ${getProgressColor(skill.color)} rounded-full transition-all duration-1000 ease-out`}
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                  <p className="text-xs text-gray-500 mt-1 group-hover:text-gray-400 transition-colors">
-                    {skill.description}
-                  </p>
-                </div>
-              ))}
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        {skillGroups.map((group) => (
+          <article key={group.number} className="rounded-2xl border border-slate-800 bg-slate-900/55 p-6 transition hover:border-emerald-400/30">
+            <div className="mb-5 flex items-center justify-between">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-400/10 font-mono text-sm font-semibold text-emerald-300">{group.number}</span>
+              <span className="h-px flex-1 bg-slate-800 mx-4" />
+              <span className="text-xs font-medium uppercase tracking-widest text-slate-500">Capability</span>
             </div>
-          </div>
+            <h3 className="text-lg font-bold text-white">{group.title}</h3>
+            <p className="mt-2 min-h-12 text-sm leading-6 text-slate-400">{group.description}</p>
+            <ul className="mt-5 space-y-3">
+              {group.items.map((item) => (
+                <li key={item} className="flex gap-3 text-sm leading-5 text-slate-300">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" aria-hidden="true" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </article>
         ))}
       </div>
-
-      {/* Additional Skills Summary */}
-      <div className="mt-16 text-center">
-        <h3 className="text-2xl font-bold text-white mb-8">Additional Competencies</h3>
-        <div className="flex flex-wrap justify-center gap-3">
-          {[
-            "Site Architecture", "Internal Linking", "Mobile Usability", "Backlink Analysis", "Competitor Research",
-            "Schema Markup", "White-Hat SEO", "Keyword Optimization", "Conversion Tracking", "Performance Marketing",
-            "English - Fluent", "Vietnamese - Fluent"
-          ].map((skill, index) => (
-            <span key={index} className="px-4 py-2 bg-gray-800/50 text-gray-300 rounded-full text-sm border border-gray-700 hover:border-emerald-500/50 hover:text-emerald-400 transition-all duration-300">
-              {skill}
-            </span>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+      <p className="mt-6 text-center text-xs leading-5 text-slate-500">
+        Network tools and support workflows reflect hands-on practice; account, hardware and security topics reflect foundational knowledge and a readiness to learn team procedures.
+      </p>
+    </div>
+  </section>
+);
 
 export default Skills;

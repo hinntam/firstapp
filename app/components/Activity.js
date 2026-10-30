@@ -10,73 +10,29 @@ const Activity = () => {
     {
       id: 1,
       category: "professional",
-      title: "Web Manager - SEO & Digital Marketing",
+      title: "IT Support & Help Desk",
       subtitle: "Deluxe Nail Bar | Carrington, Calgary, AB | Present",
-      description: "Led end-to-end SEO and performance marketing execution to improve visibility, rankings, qualified leads, and ad efficiency.",
-      image: "/web/booking.png",
+      description: "Maintain and troubleshoot IT systems and user support requests.",
+      image: "/assets/onlinebookingsystem.jpg",
       link: "https://www.linkedin.com/in/hijohnnguyen/",
       date: "Present",
       achievements: [
-        "Led end-to-end SEO strategy to improve search visibility and local rankings on Google and Bing",
-        "Reorganized WordPress architecture, internal linking, and URL structure for stronger crawlability and indexing",
-        "Optimized titles, meta descriptions, keywords, schema, images, and content using Yoast SEO and AI-assisted tools",
-        "Used Google Search Console query data to improve CTR and conversion-focused page targeting",
-        "Improved Core Web Vitals and page speed with mobile-first optimization",
-        "Managed Google Ads Search and Display campaigns with GA4 and GTM conversion tracking",
-        "Executed remarketing campaigns to re-engage high-intent users and improve ROI",
-        "Conducted Semrush and Ahrefs competitor audits and backlink analysis with white-hat implementation",
-        "Applied Google Search policy-compliant SEO practices and AI tools including ChatGPT, GA4 AI Insights, Yoast AI, and Ads AI"
+        "Maintain business website content and functionality using WordPress",
+        "Investigate website performance and usability issues, then test changes",
+        "Translate business needs into practical technical updates",
+        "Communicate progress and explain technical decisions in accessible language",
+        "Coordinate ongoing tasks and follow through on requested changes"
       ],
-      tech: ["WordPress", "Yoast SEO", "Google Ads", "GA4", "GTM", "Semrush", "Ahrefs"],
+      tech: ["WordPress", "Troubleshooting", "Communication", "Task Coordination"],
       status: "active"
     },
-    {
-      id: 2,
-      category: "education",
-      title: "Software Development Diploma",
-      subtitle: "Southern Alberta Institute of Technology (SAIT), Calgary, AB",
-      description: "GPA: 3.83 / 4.00 | Completed April 2025. Built a strong software engineering foundation that supports technical SEO and marketing execution.",
-      image: "/assets/sait.jpg",
-      link: "https://www.sait.ca/",
-      date: "Completed Apr 2025",
-      achievements: [
-        "Data Structures & Algorithms",
-        "Object-Oriented Programming",
-        "Web & Mobile Development",
-        "Software Testing & Deployment",
-        "Software Analysis & Design",
-        "Software Security",
-        "Database Programming",
-        "Computer Networks",
-        "User Experience (UX) & Design",
-        "Operating Systems"
-      ],
-      tech: ["Software Analysis", "Testing", "Security", "UX", "Databases"],
-      status: "completed"
-    },
+    
     {
       id: 3,
-      category: "professional",
-      title: "Google Certifications",
-      subtitle: "Analytics + Ads Credential Track",
-      description: "Maintained role-relevant Google certifications for analytics and paid media execution.",
-      image: "/assets/technicalseo.jpeg",
-      link: "https://skillshop.credential.net/",
-      date: "2023-2026",
-      achievements: [
-        "Google Analytics Certification | Dec 2025 - Dec 2026",
-        "Google Ads Search Certification | May 2025 - May 2026",
-        "Google Ads Display Certification | Sep 2023 - Sep 2024"
-      ],
-      tech: ["GA4", "Search Ads", "Display Ads", "Measurement"],
-      status: "certified"
-    },
-    {
-      id: 4,
       category: "education",
       title: "SAIT Capstone Project",
       subtitle: "Mobile & Web Solution | Jan 2024 - Apr 2024",
-      description: "Collaborated with a 4-member team to analyze requirements, implement Python functionality, and validate against project expectations.",
+      description: "Collaborated with a 4-member team to analyze requirements, communicate progress, and validate a Python solution against expected behavior.",
       image: "/assets/capcon.jpeg",
       link: "https://github.com/",
       date: "Jan 2024 - Apr 2024",
@@ -90,12 +46,12 @@ const Activity = () => {
       status: "completed"
     },
     {
-      id: 5,
+      id: 4,
       category: "community",
       title: "Volunteer - Calgary Food Bank",
       subtitle: "Calgary, AB | Apr 2024 - Present",
       description: "Contributing to warehouse and event operations through reliable teamwork and safety-focused execution.",
-      image: "/assets/github.jpeg",
+      image: "/assets/calgaryfoodbank.jpg",
       link: "https://www.calgaryfoodbank.com/",
       date: "Apr 2024 - Present",
       achievements: [
@@ -141,10 +97,10 @@ const Activity = () => {
     <section id="activities" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
       <div className="text-center mb-16">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Professional <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Activities</span>
+          Education &amp; <span className="bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Experience</span>
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-          A focused timeline of marketing experience, certifications, software education, and community contribution.
+          A focused overview of my technical education, project collaboration, professional experience, and community contribution.
         </p>
       </div>
 
@@ -257,20 +213,20 @@ const Activity = () => {
       <div className="mt-16 pt-16 border-t border-gray-800">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-            <div className="text-3xl font-bold text-emerald-400 mb-2">3</div>
-            <div className="text-gray-300">Certifications</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-2">3.83</div>
+            <div className="text-gray-300">SAIT GPA / 4.00</div>
           </div>
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-            <div className="text-3xl font-bold text-blue-400 mb-2">2</div>
-            <div className="text-gray-300">Primary Markets</div>
+            <div className="text-3xl font-bold text-blue-400 mb-2">1</div>
+            <div className="text-gray-300">Completed Diploma</div>
           </div>
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
             <div className="text-3xl font-bold text-purple-400 mb-2">4</div>
-            <div className="text-gray-300">Core Practice Areas</div>
+            <div className="text-gray-300">Network Commands Practiced</div>
           </div>
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800">
-            <div className="text-3xl font-bold text-emerald-400 mb-2">100%</div>
-            <div className="text-gray-300">White-Hat SEO Focus</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-2">2</div>
+            <div className="text-gray-300">Languages: English &amp; Vietnamese</div>
           </div>
         </div>
       </div>

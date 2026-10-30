@@ -5,16 +5,15 @@ import Contact from './components/Contact';
 import Projects from './components/Project';
 import Skills from './components/Skill';
 import Activity from './components/Activity';
-import Certificate from './components/Certificate';
 import ChatWidget from './chatai/components/chatwidget';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>John Nguyen - SEO & Digital Marketing Specialist | Calgary</title>
-        <meta name="description" content="SEO and Digital Marketing Specialist in Calgary with experience in WordPress, technical SEO, Google Ads, GA4, GTM, and AI-assisted content optimization." />
-        <meta name="keywords" content="SEO Specialist, Digital Marketing, WordPress SEO, Google Ads, GA4, GTM, Technical SEO, Calgary" />
+        <title>John Nguyen - IT Support & Help Desk | Calgary</title>
+        <meta name="description" content="Entry-level IT support candidate in Calgary with a SAIT Software Development diploma and hands-on practice in Windows troubleshooting, network diagnostics, help desk ticket documentation, and user support." />
+        <meta name="keywords" content="IT Support, Help Desk, Windows Troubleshooting, Network Diagnostics, Calgary, SAIT Software Development" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -31,9 +30,6 @@ export default function Home() {
         
         {/* Skills Section */}
         <Skills/>
-        
-        {/* Certificates Section */}
-        <Certificate/>
         
         {/* Projects Section */}
         <Projects/>
