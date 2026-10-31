@@ -9,7 +9,7 @@ const projects = [
     description: "A deployed learner-driver study project that makes Alberta Class 7 test preparation easier to access and practice.",
     proof: "Built, deployed and maintained",
     tags: ["Web application", "User experience", "Ongoing maintenance"],
-    href: "mailto:mailtam62@gmail.com?subject=Alberta%20Driving%20Class%207%20project",
+    href: "https://play.google.com/store/apps/details?id=com.codewithnguyen.todoalbertadriving",
     action: "Ask about this project"
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     description: "An online book-system project showcasing my ability to turn an idea into a working application and maintain it after launch.",
     proof: "Built, deployed and maintained",
     tags: ["Application development", "Problem solving", "Ongoing maintenance"],
-    href: "mailto:mailtam62@gmail.com?subject=Online%20Book%20System%20project",
+    href: "https://fireapp-59839.web.app/deluxenailbar.html",
     action: "Ask about this project"
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     description: "A business website project with booking-focused content, designed around the needs of a local service business.",
     proof: "Deployed and maintained",
     tags: ["Website maintenance", "Booking experience", "Small business"],
-    href: "/webstudio",
+    href: "https://deluxenailbar.ca/",
     action: "View website showcase"
   }
 ];
